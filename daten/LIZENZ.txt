@@ -1,0 +1,38 @@
+haefen-europa.geojson -- Hafendaten / harbour data
+==================================================
+
+DE
+Diese Datei enthaelt Haefen, Marinas und Ankerplaetze an den Kuesten und
+Seen Europas, abgeleitet aus OpenStreetMap. Die Daten wurden gefiltert, in
+den Namen bereinigt und entdoppelt.
+
+Sie ist damit eine abgeleitete Datenbank im Sinne der Open Database License
+(ODbL) 1.0 und steht unter denselben Lizenzbedingungen.
+
+  Lizenztext : https://opendatacommons.org/licenses/odbl/1-0/
+  Quelle     : (c) OpenStreetMap-Mitwirkende
+               https://www.openstreetmap.org/copyright
+  Datei, Skript und Abfragen: https://github.com/BodyP0P/nautly-hafenliste
+
+  OSM-Stand, Commit und Pruefsumme: siehe HERKUNFT.json in diesem Ordner
+
+  Die Daten sind unvollstaendig und ungeprueft und werden ohne Gewaehr
+  bereitgestellt. Nicht zur Navigation verwenden.
+
+EN
+This file contains harbours, marinas and anchorages on the coasts and
+lakes of Europe, derived from OpenStreetMap. The data has been filtered,
+cleaned up in the names and de-duplicated.
+
+It is therefore a derivative database under the Open Database License
+(ODbL) 1.0 and is made available under the same terms.
+
+  Licence    : https://opendatacommons.org/licenses/odbl/1-0/
+  Source     : (c) OpenStreetMap contributors
+               https://www.openstreetmap.org/copyright
+  File, script and queries: https://github.com/BodyP0P/nautly-hafenliste
+
+  OSM snapshot, commit and checksum: see HERKUNFT.json in this folder
+
+  The data is incomplete and unverified and is provided as is.
+  Do not use for navigation.

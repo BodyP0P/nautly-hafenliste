@@ -1,0 +1,123 @@
+{
+ "byte": 4088531,
+ "datei": "haefen-europa.geojson",
+ "lizenz": "OpenStreetMap, (c) OpenStreetMap-Mitwirkende, ODbL 1.0",
+ "lizenzUri": "https://opendatacommons.org/licenses/odbl/1-0/",
+ "osmStand": "2026-11-17T19:50:03Z",
+ "punkteBenanntNamenlos": {
+  "anker": {
+   "benannt": 949,
+   "namenlos": 1378
+  },
+  "hafen": {
+   "benannt": 14905,
+   "namenlos": 3640
+  }
+ },
+ "punkteJeKlasse": {
+  "anker": 2327,
+  "hafen": 18545
+ },
+ "quelle": {
+  "abfragen": "rezept/<gebiet>.query.txt",
+  "antworten": [
+   {
+    "byte": 483556,
+    "datei": "westmed.json",
+    "elemente": 1754,
+    "gebiet": "westmed",
+    "sha256": "86ce829a87a5ccb757de8944a16f579df1b0d072404b3f8a23780a091f99a598",
+    "timestamp_osm_base": "2026-11-17T14:22:48Z"
+   },
+   {
+    "byte": 501198,
+    "datei": "adria.json",
+    "elemente": 1949,
+    "gebiet": "adria",
+    "sha256": "61b452abd1b4b41e62b7a4876473b36b734bb709854f855fd1d60d698fc8cfba",
+    "timestamp_osm_base": "2026-11-17T14:53:09Z"
+   },
+   {
+    "byte": 384110,
+    "datei": "ostmed.json",
+    "elemente": 1568,
+    "gebiet": "ostmed",
+    "sha256": "12c45a21179cb6b29e33d28ceee7b72726247750e8a6fbfa4b8c71828d4f00d5",
+    "timestamp_osm_base": "2026-11-17T15:17:38Z"
+   },
+   {
+    "byte": 295066,
+    "datei": "atlantik.json",
+    "elemente": 1151,
+    "gebiet": "atlantik",
+    "sha256": "7575ddfb4323eae8d057feb17bc769c26016d277909fe6deeba84de6bf796337",
+    "timestamp_osm_base": "2026-11-17T16:03:35Z"
+   },
+   {
+    "byte": 1678020,
+    "datei": "nordsee.json",
+    "elemente": 5625,
+    "gebiet": "nordsee",
+    "sha256": "e9e5b433da1fa4e9748ca5fd84ca8601e990ef7aed081f8fe2ef031d9c259824",
+    "timestamp_osm_base": "2026-11-17T16:07:40Z"
+   },
+   {
+    "byte": 2631436,
+    "datei": "ostsee.json",
+    "elemente": 8687,
+    "gebiet": "ostsee",
+    "sha256": "d72a5c398af99d252b2dbfbe44486d42cc9012c3dd436d80972c694fe34b97b7",
+    "timestamp_osm_base": "2026-11-17T19:01:47Z"
+   },
+   {
+    "byte": 417721,
+    "datei": "mitte-west.json",
+    "elemente": 1387,
+    "gebiet": "mitte-west",
+    "sha256": "2e9d2d3a79a7b3f989d3557fbce46f759cbd95d0c1c2492fff53ad491264fe44",
+    "timestamp_osm_base": "2026-11-17T19:11:52Z"
+   },
+   {
+    "byte": 1032995,
+    "datei": "mitte-ost.json",
+    "elemente": 3408,
+    "gebiet": "mitte-ost",
+    "sha256": "41f584738242cdf7fc32e0accbdd22df0f2709125f1235f4583e1a362b93d65d",
+    "timestamp_osm_base": "2026-11-17T19:28:54Z"
+   },
+   {
+    "byte": 40837,
+    "datei": "atlantikinseln.json",
+    "elemente": 152,
+    "gebiet": "atlantikinseln",
+    "sha256": "99bf8ace1ac1b2b04c69d19c985731225758e96c674daff8f2aa75a96f7ecf76",
+    "timestamp_osm_base": "2026-11-17T19:44:00Z"
+   },
+   {
+    "byte": 10208,
+    "datei": "nordatlantik.json",
+    "elemente": 42,
+    "gebiet": "nordatlantik",
+    "sha256": "cd2105a9e74ceb11ecadb25eecbec262073584b93eb995c036e69a90b6622e74",
+    "timestamp_osm_base": "2026-11-17T19:50:03Z"
+   }
+  ],
+  "server": "https://overpass-api.de/api/interpreter"
+ },
+ "regel": "R0 mit Abweichung 1 (Ankerplaetze als eigene Klasse) und Abweichung 2 (Vereinshaefen bleiben); Namenlose nach Nautly D-1 (500 m zu benannten, 300 m untereinander); nur echt innerhalb der Gebiete",
+ "repo": "https://github.com/BodyP0P/nautly-hafenliste",
+ "repoCommit": null,
+ "repoCommitHinweis": "Wird beim Uebernehmen in die App gesetzt; im Repo zeigt der Commit dieser Datei den Stand.",
+ "rezept": {
+  "abfrage": "skript/abfragen.py",
+  "gebiete": "rezept/gebiete.json",
+  "sha256": {
+   "abfragen.py": "c95efb30bd11c24dd8b10bfee3d84b83f27b8e5203927aa8b6a60b85ce3c3301",
+   "gebiete.json": "926ed4bc894cfe6b2f7303061549a2f81f16fb4b15ff4925cfa3e356c86c420f",
+   "hafenliste.py": "efd02b292ef05b9f5b2a4701048bdad63f26bf394b6de8cc741cff7238494b00"
+  },
+  "skript": "skript/hafenliste.py"
+ },
+ "sha256": "b374e505e0046d766269006669e416f3c4f96634843c1c2729a232341dce46bb",
+ "unicode": "17.0.0"
+}
