@@ -1,0 +1,7 @@
+[out:json][timeout:300];
+(
+nwr["leisure"="marina"](45.9,8.9,53.1,40.1);
+nwr["harbour"]["harbour"!="no"](45.9,8.9,53.1,40.1);
+nwr["seamark:type"~"^(harbour|anchorage|anchor_berth)$"](45.9,8.9,53.1,40.1);
+);
+out center tags;

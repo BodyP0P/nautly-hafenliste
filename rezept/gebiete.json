@@ -1,0 +1,16 @@
+{
+  "einheit": "Grad WGS84, Reihenfolge wie Overpass (sued, west, nord, ost)",
+  "regel": "Stossen zwei Rechtecke aneinander, ueberlappen sie sich um 0.1 Grad. Ein Punkt genau auf einer Kante gilt fuer MapLibre `within` als draussen (B0-c, 17.11.2026); Overpass zaehlt den Rand mit.",
+  "gebiete": [
+    {"id": "westmed",        "s": 35.0, "w": -6.0,  "n": 44.5, "o": 10.1, "was": "Westliches Mittelmeer"},
+    {"id": "adria",          "s": 35.0, "w": 10.0,  "n": 46.0, "o": 21.1, "was": "Tyrrhenisches Meer, Adria, Malta, Lampedusa, Gardasee"},
+    {"id": "ostmed",         "s": 33.0, "w": 21.0,  "n": 46.5, "o": 42.0, "was": "Ionisches und Aegaeisches Meer, Schwarzes Meer, Zypern, Suedteil Asowsches Meer"},
+    {"id": "atlantik",       "s": 35.5, "w": -10.5, "n": 48.1, "o": -1.0, "was": "Iberische und franzoesische Atlantikkueste"},
+    {"id": "nordsee",        "s": 48.0, "w": -11.0, "n": 61.0, "o": 9.0,  "was": "Aermelkanal, Britische Inseln, Nordsee"},
+    {"id": "ostsee",         "s": 53.0, "w": 4.0,   "n": 72.0, "o": 32.0, "was": "Skagerrak, Ostsee, Norwegen, Finnland"},
+    {"id": "mitte-west",     "s": 44.4, "w": -1.1,  "n": 48.1, "o": 10.1, "was": "Binnenland Frankreich, Schweiz, oberitalienische Seen"},
+    {"id": "mitte-ost",      "s": 45.9, "w": 8.9,   "n": 53.1, "o": 40.1, "was": "Bodensee, Deutschland, Oesterreich, Polen, Balaton, Berliner Seen, Nordteil Asowsches Meer"},
+    {"id": "atlantikinseln", "s": 27.4, "w": -31.6, "n": 40.0, "o": -13.2, "was": "Kanaren, Madeira, Azoren"},
+    {"id": "nordatlantik",   "s": 61.3, "w": -25.0, "n": 67.0, "o": -6.1, "was": "Island, Faeroeer"}
+  ]
+}
