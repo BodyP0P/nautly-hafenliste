@@ -106,6 +106,25 @@ class EinzelobjektTest(unittest.TestCase):
             self.assertIsNone(e["name"], n)
             self.assertEqual(e["namenlos_grund"], "nur Gattungswort", n)
 
+    def test_gattungsnamen_nautly_werden_namenlos(self):
+        for n in ("Småbåtshamn", "småbåtshavn", "Gästhamn", "Venesatama", "Port de Plaisance", "Capitainerie",
+                  "Ausstiegsstelle"):
+            e, grund = h.pruefe("node", 1, {"leisure": "marina", "name": n}, (45, 15))
+            self.assertIsNone(grund, n)
+            self.assertIsNone(e["name"], n)
+            self.assertEqual(e["namenlos_grund"], "nur Gattungswort", n)
+        for n in ("Småbåtshamn Lilla Bommen", "Ausstiegsstelle nur für Kanuten", "Port de Plaisance de Nice"):
+            self.assertEqual(h.pruefe("node", 1, {"leisure": "marina", "name": n}, (45, 15))[0]["name"], n)
+
+    def test_liegeplatznummer_wird_namenlos(self):
+        for n in ("1", "12", "A", "b", "Ž"):
+            e, _ = h.pruefe("node", 1, {"seamark:type": "anchor_berth", "name": n}, (45, 15))
+            self.assertIsNone(e["name"], n)
+            self.assertEqual(e["namenlos_grund"], "nur Liegeplatznummer", n)
+        for n in ("A1", "12a", "Box 42", "Ab", "١٢"):
+            e, _ = h.pruefe("node", 1, {"seamark:type": "anchor_berth", "name": n}, (45, 15))
+            self.assertEqual(e["name"], n, n)
+
     def test_namenlos_mit_seezeichen_platz_1(self):
         e, _ = h.pruefe("node", 1, {"leisure": "marina", "name": "Marina",
                                      "seamark:type": "harbour", "seamark:name": "Marina"}, (45, 15))

@@ -17,7 +17,8 @@ Regeln (die Werte stehen als Konstanten unten):
               seamark:type=harbour oder harbour != no -> hafen; alles andere faellt weg.
   Name        `name`, nur wenn leer `seamark:name`; NFC, aussen getrimmt. Namen mit + oder ; und
               Namen ueber 255 Byte fallen weg. Ein Klammerzusatz faellt nur nach KLAMMER_WEG weg.
-              Ein Name, der nur ein Gattungswort ist ("Marina", "Luka"), gilt als namenlos.
+              Ein Name, der nur ein Gattungswort ist ("Marina", "Luka", "Småbåtshamn"), oder nur eine
+              Liegeplatznummer (nur Ziffern oder ein einzelner Buchstabe), gilt als namenlos.
   Gebiete     Ein Eintrag bleibt nur, wenn er echt innerhalb eines Rechtecks liegt (nicht auf dem
               Rand), gemessen an der gerundeten Lage, die die App sieht. So zeigt die App genau
               die Eintraege, die ihr Filter `within` den Kartenkacheln wegnimmt.
@@ -81,6 +82,10 @@ GATTUNG_ALLEIN = ("marina", "hafen", "yachthafen", "jachthafen", "sportboothafen
                   "fischerhafen", "fischereihafen", "gemeindehafen", "stadthafen", "privathafen",
                   "gondelhafen", "schutzhafen", "anlegestelle", "bojenfeld", "steg", "luka", "lučica",
                   "porat", "mandrač", "port", "porto", "harbour", "havn", "hamn", "haven")
+# Nautly-Ergaenzung zu R0 (Oscar 17.11.2026 nach Doras D-1): haeufige Gattungsnamen in den Daten
+GATTUNG_ALLEIN_NAUTLY = ("småbåtshamn", "småbåtshavn", "gästhamn", "venesatama", "port de plaisance",
+                         "capitainerie", "ausstiegsstelle")
+GATTUNG_ALLEIN = GATTUNG_ALLEIN + GATTUNG_ALLEIN_NAUTLY
 
 LIZENZ_KURZ = "ODbL-1.0 https://opendatacommons.org/licenses/odbl/1-0/"
 ATTRIBUTION = "© OpenStreetMap contributors https://www.openstreetmap.org/copyright"
@@ -250,6 +255,11 @@ def klammer_weg(name):
     return name
 
 
+def ist_liegeplatznummer(name):
+    """Nur Ziffern 0-9 oder ein einzelner Buchstabe ("12", "A")."""
+    return (name.isascii() and name.isdigit()) or (len(name) == 1 and name.isalpha())
+
+
 def platz(osm_sz, sz_name_text, hat_name):
     if not osm_sz:
         return 0
@@ -278,6 +288,8 @@ def pruefe(typ, oid, tags, lage):
             namenlos_grund = "ohne Namen"
         elif n.casefold() in GATTUNG_ALLEIN:
             namenlos_grund = "nur Gattungswort"
+        elif ist_liegeplatznummer(n):
+            namenlos_grund = "nur Liegeplatznummer"
         elif len(n.encode("utf-8")) > NAME_MAX_BYTE:
             return None, "Name zu lang"
     if namenlos_grund is not None:
@@ -305,7 +317,7 @@ def neues_log():
         "doppelt_im_eingang": 0,
         "keine_klasse": 0,
         "klassen": {k: {"gelesen": 0, "weg": {g: 0 for g in GRUENDE if g != "keine Klasse"},
-                        "als_namenlos": {"ohne Namen": 0, "nur Gattungswort": 0},
+                        "als_namenlos": {"ohne Namen": 0, "nur Gattungswort": 0, "nur Liegeplatznummer": 0},
                         "geschrieben": 0, "geschrieben_benannt": 0, "geschrieben_namenlos": 0}
                     for k in KLASSEN},
     }
