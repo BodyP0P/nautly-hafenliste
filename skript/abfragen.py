@@ -14,7 +14,7 @@ Regeln fuer den Abruf (Rücksicht auf den oeffentlichen Server):
   - hoechstens --max-abfragen Abfragen je Zielordner, Wiederholungen und fruehere Aufrufe
     (abruf.json) eingerechnet
   - vor jeder Abfrage fragt das Skript /api/status, ob ein Platz frei ist. Ist der Server voll,
-    wartet es (60, 120, 240, 480 s, hoechstens 40 min) und schickt keine Abfrage. Ein Blick auf
+    wartet es (Blick alle 90 s, hoechstens 40 min oder --warten-max) und schickt keine Abfrage. Ein Blick auf
     /api/status zaehlt nicht als Abfrage.
   - User-Agent ohne Personen- oder Geraetebezug
   - `out center tags`, ohne `meta`: Die Antwort traegt keine Bearbeiter, Versionen oder Zeitstempel
@@ -24,7 +24,7 @@ Eine Antwort, die schon vollstaendig im Zielordner liegt, wird nicht noch einmal
 
 Aufrufe:
   python3 -I skript/abfragen.py texte                 # nur rezept/<id>.query.txt schreiben
-  python3 -I skript/abfragen.py holen <zielordner> [--max-abfragen 15]
+  python3 -I skript/abfragen.py holen <zielordner> [--max-abfragen 15] [--warten-max 2400]
 
 Nur Standardbibliothek. Laeuft mit Python 3.9 und neuer.
 """
@@ -40,6 +40,7 @@ import urllib.request
 SERVER = "https://overpass-api.de/api/interpreter"
 STATUS = "https://overpass-api.de/api/status"
 STATUS_WARTEN_MAX_S = 2400
+STATUS_TAKT_S = 90
 USER_AGENT = "Nautly-Hafenliste/1.0 (+https://nautly.ch)"
 PAUSE_S = 60
 RUECKZUG_S = (120, 240, 480)
@@ -111,7 +112,7 @@ def platz_frei():
 
 
 def warte_auf_platz():
-    gewartet, schritt = 0, 0
+    gewartet = 0
     while True:
         frei, text = platz_frei()
         print("status %s: %s" % (_jetzt(), text), flush=True)
@@ -119,11 +120,9 @@ def warte_auf_platz():
             return True
         if gewartet >= STATUS_WARTEN_MAX_S:
             return False
-        pause = (PAUSE_S,) + RUECKZUG_S
-        p = pause[min(schritt, len(pause) - 1)]
+        p = STATUS_TAKT_S
         time.sleep(p)
         gewartet += p
-        schritt += 1
 
 
 def _jetzt():
@@ -214,6 +213,9 @@ def main(argv):
         max_abfragen = 15
         if "--max-abfragen" in argv:
             max_abfragen = int(argv[argv.index("--max-abfragen") + 1])
+        if "--warten-max" in argv:
+            global STATUS_WARTEN_MAX_S
+            STATUS_WARTEN_MAX_S = int(argv[argv.index("--warten-max") + 1])
         return holen(lade_gebiete(), argv[1], max_abfragen)
     print(__doc__)
     return 64
