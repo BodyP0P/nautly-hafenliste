@@ -14,8 +14,9 @@ Diese Hafenliste ist eine abgeleitete Datenbank von OpenStreetMap und steht unte
 ### Daten und Skript
 
 **Dateien in `daten/`:**
-- `haefen-europa.geojson` ist die Hafenliste. Genau diese Datei, Byte für Byte, liegt in der App Nautly für Android.
-- `HERKUNFT.json` nennt Lizenz, Prüfsumme, OSM-Stand und Prüfsumme jeder Overpass-Antwort, die Regel und die Zahl der Punkte je Klasse.
+- `haefen-europa.geojson` ist die Hafenliste.
+- `haefen-europa.pmtiles` enthält dieselben Punkte als Vektorkacheln (PMTiles, Ebene `haefen`, Zoom 0 bis 10, ohne `osm`). Genau diese Datei, Byte für Byte, liegt in der App Nautly für Android.
+- `HERKUNFT.json` nennt Lizenz, die Prüfsummen beider Dateien, OSM-Stand und Prüfsumme jeder Overpass-Antwort, die Regel, die Zahl der Punkte je Klasse sowie Werkzeug und Befehl der Kacheln (Block `pmtiles`).
 - `LIZENZ.txt` ist der Lizenzhinweis (Deutsch und Englisch).
 - `lauf-log.json` und `paare-unter-1000m.tsv` zeigen, was das Skript gelesen, weggelassen und geschrieben hat.
 
@@ -32,10 +33,11 @@ Diese Hafenliste ist eine abgeleitete Datenbank von OpenStreetMap und steht unte
 ```
 python3 -I skript/abfragen.py holen <ordner>        # Overpass, mit Pausen, höchstens 15 Abfragen
 python3 -I skript/hafenliste.py <ordner> daten       # schreibt daten/
+python3 -I skript/kacheln.py daten                   # Vektorkacheln, ergänzt HERKUNFT.json und LIZENZ.txt
 python3 -I -m unittest discover -s skript            # Tests
 ```
 
-Nur Python-Standardbibliothek, Python 3.9 oder neuer. Zwei Läufe über dieselben Antworten ergeben dieselben Bytes.
+Nur Python-Standardbibliothek, Python 3.9 oder neuer, für die Kacheln dazu [tippecanoe](https://github.com/felt/tippecanoe) (Version in `HERKUNFT.json`). Zwei Läufe über dieselben Antworten ergeben dieselbe GeoJSON-Datei, Byte für Byte. Die Kacheln sind im Inhalt gleich, nicht in jedem Byte (tippecanoe ordnet die Punkte innerhalb einer Kachel je Lauf anders); darum liegt die Kacheldatei selbst hier.
 
 Die Daten sind unvollständig und ungeprüft und werden ohne Gewähr bereitgestellt. Nicht zur Navigation verwenden.
 
@@ -53,8 +55,9 @@ This harbour list is a derived database of OpenStreetMap and is licensed under t
 ### Data and script
 
 **Files in `daten/`:**
-- `haefen-europa.geojson` is the harbour list. This exact file, byte for byte, ships in the Nautly app for Android.
-- `HERKUNFT.json` gives the licence, checksum, OSM snapshot and checksum of each Overpass response, the rule and the number of points per class.
+- `haefen-europa.geojson` is the harbour list.
+- `haefen-europa.pmtiles` holds the same points as vector tiles (PMTiles, layer `haefen`, zoom 0 to 10, without `osm`). This exact file, byte for byte, ships in the Nautly app for Android.
+- `HERKUNFT.json` gives the licence, the checksums of both files, the OSM snapshot and checksum of each Overpass response, the rule, the number of points per class and the tool and command for the tiles (block `pmtiles`).
 - `LIZENZ.txt` is the licence notice (German and English).
 - `lauf-log.json` and `paare-unter-1000m.tsv` show what the script read, left out and wrote.
 
@@ -66,6 +69,6 @@ This harbour list is a derived database of OpenStreetMap and is licensed under t
 - Same name within 500 m: one entry remains. Entries without a name remain only if no named entry lies within 500 m, and among each other one remains within 300 m.
 - An entry remains only if it lies strictly inside an area, not on its edge.
 
-**Generate:** see the commands above. Python standard library only, Python 3.9 or newer. Two runs over the same responses give the same bytes.
+**Generate:** see the commands above. Python standard library only, Python 3.9 or newer, plus [tippecanoe](https://github.com/felt/tippecanoe) for the tiles (version in `HERKUNFT.json`). Two runs over the same responses give the same GeoJSON file, byte for byte. The tiles are equal in content, not in every byte (tippecanoe orders the points within a tile differently on each run); that is why the tile file itself is kept here.
 
 The data is incomplete and unverified and is provided as is. Do not use for navigation.

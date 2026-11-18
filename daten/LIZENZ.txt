@@ -1,38 +1,40 @@
-haefen-europa.geojson -- Hafendaten / harbour data
-==================================================
+haefen-europa.geojson, haefen-europa.pmtiles -- Hafendaten / harbour data
+========================================================================
 
 DE
-Diese Datei enthaelt Haefen, Marinas und Ankerplaetze an den Kuesten und
+Diese Dateien enthalten Haefen, Marinas und Ankerplaetze an den Kuesten und
 Seen Europas, abgeleitet aus OpenStreetMap. Die Daten wurden gefiltert, in
-den Namen bereinigt und entdoppelt.
+den Namen bereinigt und entdoppelt. haefen-europa.pmtiles enthaelt dieselben
+Punkte als Vektorkacheln (PMTiles), so wie die App Nautly sie zeichnet.
 
-Sie ist damit eine abgeleitete Datenbank im Sinne der Open Database License
-(ODbL) 1.0 und steht unter denselben Lizenzbedingungen.
+Sie sind damit eine abgeleitete Datenbank im Sinne der Open Database License
+(ODbL) 1.0 und stehen unter denselben Lizenzbedingungen.
 
   Lizenztext : https://opendatacommons.org/licenses/odbl/1-0/
   Quelle     : (c) OpenStreetMap-Mitwirkende
                https://www.openstreetmap.org/copyright
-  Datei, Skript und Abfragen: https://github.com/BodyP0P/nautly-hafenliste
+  Dateien, Skript und Abfragen: https://github.com/BodyP0P/nautly-hafenliste
 
-  OSM-Stand, Commit und Pruefsumme: siehe HERKUNFT.json in diesem Ordner
+  OSM-Stand, Commit und Pruefsummen: siehe HERKUNFT.json in diesem Ordner
 
   Die Daten sind unvollstaendig und ungeprueft und werden ohne Gewaehr
   bereitgestellt. Nicht zur Navigation verwenden.
 
 EN
-This file contains harbours, marinas and anchorages on the coasts and
+These files contain harbours, marinas and anchorages on the coasts and
 lakes of Europe, derived from OpenStreetMap. The data has been filtered,
-cleaned up in the names and de-duplicated.
+cleaned up in the names and de-duplicated. haefen-europa.pmtiles holds the
+same points as vector tiles (PMTiles), as drawn by the Nautly app.
 
-It is therefore a derivative database under the Open Database License
-(ODbL) 1.0 and is made available under the same terms.
+They are therefore a derivative database under the Open Database License
+(ODbL) 1.0 and are made available under the same terms.
 
   Licence    : https://opendatacommons.org/licenses/odbl/1-0/
   Source     : (c) OpenStreetMap contributors
                https://www.openstreetmap.org/copyright
-  File, script and queries: https://github.com/BodyP0P/nautly-hafenliste
+  Files, script and queries: https://github.com/BodyP0P/nautly-hafenliste
 
-  OSM snapshot, commit and checksum: see HERKUNFT.json in this folder
+  OSM snapshot, commit and checksums: see HERKUNFT.json in this folder
 
   The data is incomplete and unverified and is provided as is.
   Do not use for navigation.
