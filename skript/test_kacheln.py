@@ -60,7 +60,6 @@ class Lizenz(unittest.TestCase):
             self.assertIn(soll, t)
 
 
-@unittest.skipUnless(shutil.which("tippecanoe"), "tippecanoe nicht installiert")
 class EchterLauf(unittest.TestCase):
 
     def test_baue_schreibt_pmtiles_und_ergaenzt_herkunft(self):
@@ -96,6 +95,10 @@ class EchterLauf(unittest.TestCase):
                 k.baue(d)
             self.assertFalse(os.path.exists(os.path.join(d, k.DATEI_PMTILES)))
 
+
+
+# Ohne Dekorator-Zeichen geschrieben: Die Pruefung vor jedem Push sucht im Repo nach "@" (Adressen).
+EchterLauf = unittest.skipUnless(shutil.which("tippecanoe"), "tippecanoe nicht installiert")(EchterLauf)
 
 if __name__ == "__main__":
     unittest.main()
