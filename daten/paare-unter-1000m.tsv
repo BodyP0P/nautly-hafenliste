@@ -1286,7 +1286,6 @@ meter	osm_a	name_a	osm_b	name_b
 32	node/13289315574	Box 32	node/13289319807	Box X
 32	node/13289315584	Box 42	node/13289319803	Box 14
 32	node/13289319801	Box 12	way/136098077	Jachthaven Gelre
-32	node/458390005	Vierasvenesatama	way/917753566	Säynätsalon venesatama
 32	node/4685462236	Bocca di Magra Ar-Nav Harbour	way/430206446	Ar Nav
 32	node/5097328008	Venice Kayak	way/171767049	Polo Nautico Vento di Venezia
 32	node/5164513105	La Grotta Azzura	node/5164515825	Societa Pesca Sportiva Moneglia
@@ -1928,7 +1927,6 @@ meter	osm_a	name_a	osm_b	name_b
 46	node/2400290670	Sportboothafen Schwarzenau	way/133555355	Mainblick
 46	node/2418310122	Angera - Isola Partegora	way/290212902	Johnson
 46	node/353836241	Halte Nautique de Pouillenay	node/895286700	Port de Pouillenay
-46	node/444695844	Passantenhaven	way/493762852	Passantenhaven Maagjesbolwerk
 46	way/1234677726	Vierasvenelaituri 1	way/1234677727	Huoltolaituri
 46	way/149818923	Muelle Viejo	way/371359865	Muelle Remolcadores del Puerto de Bilbao
 46	way/300713819	Pfruender-Haab	way/320439474	Pfrunder-Haab
@@ -2444,7 +2442,6 @@ meter	osm_a	name_a	osm_b	name_b
 63	node/13289315566	Box 24	node/13289315584	Box 42
 63	node/13289315574	Box 32	node/13290439971	Komplaats 4
 63	node/1544997271	Wassersport Hitdorf-Lohr e.V.	node/1544997300	Yacht Club Wuppertal-Hitdorf e.V. (YCWH)
-63	node/2004683492	passantenhaven de westereen	node/5808825235	Passantenhaven
 63	node/2072067753	Marine-Verein Neuss 1895 e.V.(MVN)	node/2143774379	Yacht Club Novesia e.V. Neuss
 63	node/2381301377	Kanu- und Yachtclub Düsseldorf	node/2381303851	Yachtclub Lörick
 63	node/431076462	Fähr- und Fischereihafen Burgstaaken	node/2153078797	Yachthafen Burgstaaken
@@ -2602,7 +2599,6 @@ meter	osm_a	name_a	osm_b	name_b
 70	node/13289275591	Box 3	node/13289315585	Box 43
 70	node/13289315547	Box 60	node/13290439968	Komplaats 1
 70	node/13289319805	Box 16	node/13290439970	Komplaats 3
-70	node/1354677767	L1	node/1354681275	L2
 70	node/1782906938	przystań statków "Dunajec" i "Halny"	node/1782906955	przystań gondoli "Czorsztynianka"
 70	node/2154436765	ASVzR - Akademische Segler-Verein zu Rostock	node/2154436823	SVTR - Segler-Verein Turbine Rostock
 70	node/2203486083	Korte Hoofd	node/2203486097	Lange Hoofd
@@ -2777,7 +2773,6 @@ meter	osm_a	name_a	osm_b	name_b
 79	node/2143774363	NWV Neuss - Neusser Wassersportverein	way/7709182	Sporthafen Neuss
 79	node/2250367710	Hundested Lystbådehavn	node/4293804812	Færgehavn
 79	node/2381300453	Motor-Yacht-Club Düsseldorf	way/981527821	Sporthafen Lörick
-79	node/253778129	Port of Joensuu	way/405685498	Pienvenesatama
 79	node/3467575012	Cala Mangiavolpe	node/5217625821	Marina Medaglie D'Oro
 79	node/3995324460	Union Yachtclub Neusiedler See	way/166318456	Union Yacht Club Neusiedlersee
 79	node/5765294004	Rekefjord	node/12127513944	Rekefjord Gjestehavn - Malmkaien
@@ -2865,7 +2860,6 @@ meter	osm_a	name_a	osm_b	name_b
 85	node/13289315581	Box 39	node/13290439970	Komplaats 3
 85	node/2075962625	Bootshafen Reiffer	node/2075962664	Segler-Club Gothia
 85	node/2103035492	Segel-Club Nordstern Spandau	node/12498473907	Anglerverein Plötze 1894 e.V.
-85	node/2118801547	Erkner Stadthafen	node/2118801577	Liegestelle Sport 24h
 85	node/2370507140	Bootsvermietung Bähr	node/2617356277	Sportboothafen Schierstein
 85	node/268608508	Yacht- und Ruder-Club Attendorn	way/24805842	Yacht- und Ruder-Club Attendorn e.V.
 85	node/279345800	Juist	node/712624884	Hafenwart Skj
@@ -2898,7 +2892,6 @@ meter	osm_a	name_a	osm_b	name_b
 87	node/12662938961	ponton 8	node/12662938964	ponton 5
 87	node/13289315579	Box 37	node/13290439972	Meldsteiger plaats
 87	node/13289315584	Box 42	node/13290439969	Komplaats 2
-87	node/1354681275	L2	node/1354681278	L3
 87	node/14002131032	Administrația Portuară Călărași	node/14002225741	Portul Turistic Călărași
 87	node/2506185612	Abser Wassersportverein e.V.	way/243196859	Abser Siel
 87	node/4564163378	Burry Port	node/4564272475	Outer Harbour
@@ -3190,7 +3183,6 @@ meter	osm_a	name_a	osm_b	name_b
 105	node/1346947133	Keszthelyi Yacht Club	node/3652535781	Halászkikötő
 105	node/14116553609	Dover Rowing Club	node/14116553610	Dover Marina Office
 105	node/1544997350	Segel Motor Club Hitdorf	node/1588137781	Bergische Yachtschule
-105	node/2004664837	JH de westerein	node/5808825235	Passantenhaven
 105	node/279910762	Segelverein	node/2105871353	Motorboot
 105	node/3459319805	Båtsam verkstad	node/3459320213	Båtsam
 105	node/7812722525	Dampferhafen	way/63248271	Auhafen
@@ -3219,7 +3211,6 @@ meter	osm_a	name_a	osm_b	name_b
 107	node/2041597890	Marina Wendisch Rietz Festwiese	node/7860261488	Gemeindeankerplatz Wendisch Rietz
 107	node/2072067753	Marine-Verein Neuss 1895 e.V.(MVN)	way/7709182	Sporthafen Neuss
 107	node/2153404543	NYC - Niendorfer Yachtclub	node/2153404559	SVNO - Segler-Vereins Niendorf / Ostsee
-107	node/431042123	Besmer Bootswerft	node/2088448395	Liegestelle Sport 24h
 107	node/4691029467	Palau Marina	relation/19250749	Porto Turistico Palau
 107	node/4696148596	Club Nautico Alghero	way/126207132	Port de l'Alguer/Porto di Alghero
 107	node/5695444924	Przystań Kapitańska	node/5711907065	Przystań "Hala Targowa"
@@ -3256,7 +3247,6 @@ meter	osm_a	name_a	osm_b	name_b
 110	node/1359132750	Mariager Jollehavn	node/1359132761	Mariager Lystbådehavn
 110	node/1800307615	Vorhafen	way/339889878	Gästehafen Purbach
 110	node/2026303945	Eisenbahner-Segel-Club-Kirchmöser	way/115679768	Eisenbahner-Segel-Verein Kirchmöser ESVK 1928 e.V.
-110	node/2084506275	Liegestelle Sport 24h	node/2084847947	Segelschiffrestaurant "Klipper"
 110	node/4093389058	Gemeindlicher Segelhafen - Chiemseepark Felden	node/7070392205	Bernauer Segel-Club
 110	node/506434820	Jachthaven Bouwsma	node/1892304966	De Haan Watersport
 110	node/5685775317	Przystań kardynalska	node/7824224910	Przystań "Wratislawia"
@@ -3327,7 +3317,6 @@ meter	osm_a	name_a	osm_b	name_b
 114	way/241781761	Eisenbahner Segelverein Hansa	way/241781764	Hansa Werft Krause
 114	way/793681839	Es Mollet	way/793681846	Club Nàutic de s'Estanyol de Migjorn
 115	node/12662927028	ponton L	node/12662938953	ponton 1
-115	node/1354681274	L4	node/1354681278	L3
 115	node/1880106015	Kleinboothafen - Yachthafen Obernzell	node/1880106936	Bootshafen für mittelgroße Boote Obernzell
 115	node/3091507132	Twann - Polizeihafen	node/3091507238	Twann
 115	node/336022224	Marina Karnin	node/431050028	Karnin
@@ -3438,7 +3427,6 @@ meter	osm_a	name_a	osm_b	name_b
 122	node/4157507207	Přístav Sudoměřice	node/7799463815	Sudoměřice
 122	node/4159710766	Havenkantoor	way/493762852	Passantenhaven Maagjesbolwerk
 122	node/431047254	Marina Harlesiel	node/1962296495	YCH Yacht Club Harlesiel
-122	node/444695838	Passantenhaven	node/7346795598	Jachthaven De Nadorst
 122	node/4532598863	Jardin des Plantes	way/23602889	Port Saint-Bernard
 122	node/6088848753	Dana Ro-Ro4	node/12739294787	Dana Pasageri
 122	node/855152234	Jachthaven de Mars	way/128624560	JH De Mars
@@ -3638,7 +3626,6 @@ meter	osm_a	name_a	osm_b	name_b
 136	node/10126466369	Mallorca Bootcharter Anhänger	way/708736580	Marina de Cala d'Or
 136	node/1996016638	Boe di cortesia	way/121561721	Porto di Gargnano
 136	node/2075962668	Verein Spandauer Jollensegler	node/2098294592	Akademischer Segel-Club zu Berlin
-136	node/2118801556	Stadtanleger Erkner	node/2118801577	Liegestelle Sport 24h
 136	node/4581585514	Bassin 3	node/4581585515	Bassin 2
 136	node/833694695	Nidos tarptautinis keleivių uostas	node/833694698	Nidos keleivinė prieplauka
 136	way/251618468	Terminal Forest	way/251618469	Terminal Frutta
@@ -3792,7 +3779,6 @@ meter	osm_a	name_a	osm_b	name_b
 150	node/11816122386	Cruises Karpaten	node/11816128531	Anlegestelle Hotel Delta
 150	node/279910762	Segelverein	node/12596015802	BunBo - das Bungalowboot / Standort Lindow
 150	node/373764967	Strandbryggan Sea Club	node/373769715	Galärbryggan Sea Club
-150	node/444695844	Passantenhaven	node/4159710766	Havenkantoor
 150	way/1170382634	Omedu rand	way/1170384088	Kaldasilla sadam
 150	way/301416823	Wassersport Bremer Schweiz e.V.	way/367056721	Bootswerft Reiners
 150	way/491454899	Watersportcentrum Sloterplas	way/491454900	Watersportvereniging Sloterplas
@@ -3864,7 +3850,6 @@ meter	osm_a	name_a	osm_b	name_b
 155	way/34209560	barca	way/142692919	Ruderclub Allemannia
 155	way/627548149	Przystań wędkarska "Fosfan"	way/627548151	Baza rybacka "Stołczyn"
 156	node/11816059123	Sulina Trans	node/11816124496	Navrom Delta
-156	node/1354677767	L1	node/1354681278	L3
 156	node/1396846718	Sportboot-Warteplatz Seeschleuse Papenburg	node/1753795560	Yachtclub Papenburg e.V.
 156	node/1829898910	Yacht-Club Wilhelmshaven (YCW)	node/13928742402	Jade-Yacht-Club e.V.
 156	node/2381275111	Düsseldorfer YC	node/4417694539	WSVD / Wasser-Sport-Verein Düsseldorf Rudergesellschaft von 1893 e.V.
@@ -4440,7 +4425,6 @@ meter	osm_a	name_a	osm_b	name_b
 201	node/4787465544	Moravia Czechie	way/487536676	18 Slapy
 201	way/117189054	Burgemeester Jansenhaven	way/1393060189	Inland Terminal Oss
 201	way/1460440649	Godthåp Lysaker båthavn	way/1460440650	Fornebos Vels båthavn
-202	node/1354681274	L4	node/1354681275	L2
 202	node/1995506438	EWV Hennigsdorf	node/1995506647	Stadthafen Hennigsdorf
 202	node/1996973305	Wasserwanderrastplatz Werder	way/212006899	Yachtcare Werder
 202	node/2123578025	Bootswerft Heuer	node/4155511022	TuS-Finkenwerder - Abteilung Segeln
@@ -4662,7 +4646,6 @@ meter	osm_a	name_a	osm_b	name_b
 218	way/936901478	Nya hamnen	way/936901479	Gamla hamnen
 219	node/2244909790	Wassersport Zentrum Rüdersdorf	node/14063930102	Angelsportverein Wieseneck 1965 e.V
 219	node/2443424933	Frederikssund Havn	way/328306023	Skyllebakke Havn
-219	node/444695838	Passantenhaven	node/4087556124	Jachthaven De Molenwaard
 219	node/5359784780	Åsgårdstrand	way/1216198612	Åsgårdstrand Seilforening
 219	node/6373880054	Leitrim Marina	way/739759765	Leitrim Quay
 219	way/1137831257	Tori jõesadam	way/1137845208	Kuressaare sadam
@@ -4678,7 +4661,6 @@ meter	osm_a	name_a	osm_b	name_b
 220	way/1021448511	Hafenbecken 3	way/1021448512	Hafenbecken 2
 220	way/1218298959	Fjellvik Båtforening	way/1218301840	Huvik båthavnen
 220	way/1486662416	Strand Båtforening	way/1486668249	Holtekilen båtforening
-220	way/215357086	Passantenhaven	way/1103895029	Sleepboothaven Leiden
 220	way/242415638	Marintürk İstanbul City Port	way/547497947	Pendik Marina
 220	way/317661530	Marina do Funchal	way/514584133	Cais de recreio do Funchal
 220	way/665424455	Sammalniemen veneranta	way/970104568	Siikalahden venesatama
@@ -4867,7 +4849,6 @@ meter	osm_a	name_a	osm_b	name_b
 236	node/2370588778	Bootshaus Müller	node/4142689954	Steganlage Fahrgastschifffahrt van de Lücht
 236	node/3866134359	Jachthaven Stenhuis	node/12778403480	Jachthaven Four Seasons
 236	node/431042192	Wassersport-Verein 1921	way/1032017018	Bootshaus Adlerhorst
-236	node/444695844	Passantenhaven	way/493762867	Passantenhaven Rodetorenplein
 236	node/4564163378	Burry Port	node/4564272473	West Harbour
 236	node/4716808095	Przystań Zjawa	node/4716808097	Przystań KZŻ
 236	node/5359784757	Kvalvik	node/5359784945	Nautøy
@@ -4881,7 +4862,6 @@ meter	osm_a	name_a	osm_b	name_b
 237	node/12662927019	ponton B	node/12662927025	ponton I
 237	node/12662929816	ponton 17	node/12662938956	ponton 13
 237	node/1347880357	Porto Turistico	node/4212162783	Porto di Miseno
-237	node/2088448395	Liegestelle Sport 24h	way/375693302	Wassersportzentrum (WSZ) der HU
 237	node/2154436820	ROYC - Rostocker Yachtclub	node/2154436822	SSV - See- und Segelsportverein der Hansestadt Rostock
 237	node/2189653482	W.S.V. “de Kil”	way/1196173419	Watersportvereniging De Kil
 237	node/2905904941	Jachthaven De Toekomst	node/2905904954	Jachthaven De Opbouw
@@ -5233,7 +5213,6 @@ meter	osm_a	name_a	osm_b	name_b
 265	node/10004483986	Circolo velico Ortigia	way/683460931	Circolo nautico Juvenilia
 265	node/1044310084	pier36eins	node/2088448394	Kaffee Liebig
 265	node/12135530401	Ośrodek doświadczalny Politechniki Gdańskiej w Iławie	way/1189985294	Port Iława
-265	node/1226691195	Anleger am Schiffsrestaurant van Loon	node/2084953779	Liegestelle Sport 24h
 265	node/2076150580	Bootshaus Ditze	node/2076369257	Marina Vulkan
 265	node/2153404539	Kommunalhafen Niendorf / Timmendorfer Strand	node/2153404559	SVNO - Segler-Vereins Niendorf / Ostsee
 265	node/3638019542	Kiærs Bruk Marina	node/3655591339	Nabbetorp Båtforening
@@ -5308,7 +5287,6 @@ meter	osm_a	name_a	osm_b	name_b
 270	way/1486662416	Strand Båtforening	way/1531640565	Oksenøya Marina
 270	way/849107410	Watersport vereniging Onrust	way/1068215592	Marine Watersport Vereniging (MWV)
 271	node/13391306440	Cala Escorxada	node/13391306441	Cala Fustam
-271	node/1354677767	L1	node/1354681274	L4
 271	node/1396835744	Sportboot-Wartesteg Seeschleuse Papenburg	node/1753795560	Yachtclub Papenburg e.V.
 271	node/2071402356	Hafen Wieck	node/2152029143	Sportboothafen Wieck
 271	node/2115693300	SAV Gut Biss 1920	node/2115693305	Segel-Club Freia
@@ -5444,7 +5422,6 @@ meter	osm_a	name_a	osm_b	name_b
 283	node/5088756480	Approdo Santa Lucia	node/5103270391	Circolo della vela Lakkios
 283	node/549740127	Halte Nautique de Montcresson	node/2070469984	Port de Montcresson
 283	node/819023784	Motorbootclub Anklam	node/2036489746	Kanustation Anklam
-283	way/1029599364	Przystań	way/1033592017	Przystań Kajakowa
 283	way/223868523	MWCA Motorboot und Wasserskiclub Aschaffenburg	way/223869602	Aschaffenburger Yachtclub e.V.
 283	way/288619560	Orrnäsets båtklubb	way/424416862	Klockargårdens bryggförening
 283	way/77512517	Ny Marina	way/116537090	Østhavn
@@ -6210,7 +6187,6 @@ meter	osm_a	name_a	osm_b	name_b
 349	node/2046121167	Segelclub ARGO e.V.	node/10140079818	Segelgemeinschaft Zeuthen e.V.
 349	node/2376053843	Campingplatz und Steganlage Arriva	way/779087796	Segel-Club Speyer
 349	node/431042126	Eisenbahn-Sportverein Schmöckwitz	node/431042145	Bootshaus Krampenblick
-349	node/431042160	Segel-Club Seddin	node/2088448395	Liegestelle Sport 24h
 349	node/5978650260	Darse Sud	way/41970983	Port de la Trinité sur Mer
 349	way/121561706	Porto privato Cartiera di Toscolano	way/189282709	Porto di Toscolano
 349	way/183214434	WSV 'De Gouden Ham'	way/183214435	Marina Hanzeland
@@ -6329,7 +6305,6 @@ meter	osm_a	name_a	osm_b	name_b
 360	node/12662929810	ponton 21	node/12662938964	ponton 5
 360	node/12662929817	ponton 18	node/12662938959	ponton 10
 360	node/1961625272	Cala Mondragó	node/1961625275	Caló des Borgit
-360	node/1976308442	Bootshaus Burchardt	node/2118801577	Liegestelle Sport 24h
 360	node/2076087434	Potsdamer Ruder-Gesellschaft	node/2076087567	Wassersportfreunde Pirschheide Potsdam
 360	node/2399444271	Limnológiai Intézet	way/980246934	BaHart Tihanyi kikötő
 360	node/282192374	Gästhamnen	node/364713478	Söderhamnen
@@ -6365,7 +6340,6 @@ meter	osm_a	name_a	osm_b	name_b
 362	node/3899567191	Mochras Lagoon	way/386614045	Llandanwg Harbour
 362	node/4118352443	Korshavn Lystbådebro	node/8896057981	Korshavn anchorplace
 362	node/449776717	Kalmar gästhamn	way/936901479	Gamla hamnen
-362	node/664027206	Plaszicht	way/820391528	Passantenhaven
 362	way/1081893459	Oddział Żeglarski PTTK Waganunda	way/1150306741	Marina Krzyżowniki
 362	way/1278225389	Hellingshaven	way/1320964606	Suderkade
 362	way/24006016	Penarth Marina	way/176493208	Cardiff Bay Yacht Club Club House
@@ -6566,7 +6540,6 @@ meter	osm_a	name_a	osm_b	name_b
 383	node/2117939231	Wasser-Sport-Club Lauenburg	node/12557911666	Warteplatz Sport
 383	node/2376054327	Bootsanleger im Reffenthal	way/202664669	Campingfreunde Reffenthal Bootsteg 2
 383	node/3616038715	Marina di Levante	way/296076903	Circolo Nautico San Marco
-383	node/431042126	Eisenbahn-Sportverein Schmöckwitz	node/2088448395	Liegestelle Sport 24h
 383	node/431078140	Stadthafen Neustrelitz	node/2132453385	Neptunclub Neustrelitz
 383	node/4684382081	Marina Molo Vecchio	way/219905604	Marina Porto Antico
 383	node/9524555535	PL1	node/9524555539	PL5
@@ -6589,7 +6562,6 @@ meter	osm_a	name_a	osm_b	name_b
 384	way/47895492	Marina Monnickendam	way/103812989	Watersportcentrum de Zeilhoek
 384	way/704911219	Watersportvereniging Oostvoorne	way/704911221	Geijsman
 384	way/722752739	Watersportvereniging Eijsden	way/722752740	Jachthaven Aqua Viva
-384	way/820391528	Passantenhaven	way/1121455436	WSV Noord Zuid
 385	node/10094878918	WSV de Zuiderzee	way/233642540	Gemeentehaven Urk
 385	node/1252117264	Marina Veere	way/46153661	Jachtclub Veere
 385	node/12662927020	ponton C	node/12662938953	ponton 1
@@ -7799,7 +7771,6 @@ meter	osm_a	name_a	osm_b	name_b
 503	node/11591781637	Darsena ACTV	way/171767049	Polo Nautico Vento di Venezia
 503	node/12662927018	ponton A	node/12662938965	ponton 4
 503	node/1274272042	Helgelandsbase	node/5357746275	Sandnessjøen
-503	node/3438643768	A1	way/336777590	Zona Sud
 503	node/431078775	Yachtclub Hebewerk Henrichenburg	node/431078780	MBC Lünen
 503	node/5100424606	La Maddalena	node/5217627934	Cla Balbiano
 503	node/7663867378	Keja AZS	way/292574187	Centrum Wypoczynkowo-Szkoleniowe Unitra
@@ -7894,7 +7865,6 @@ meter	osm_a	name_a	osm_b	name_b
 512	way/449112524	Marina Solna Kołobrzeg	relation/10646932	Port morski Kołobrzeg
 512	way/97401123	Watersportvereniging De Kaag	way/1058205941	Tjarda
 513	node/12662927022	ponton F	node/12662938957	ponton 12
-513	node/14362392973	C2	node/14362392974	C1
 513	node/1939776718	Platja Gran de Torà	node/1939776719	Paguera
 513	node/2344376031	Balatonfüred	node/4544631743	UNI
 513	node/2407894567	Port de Sérignan	relation/5655509	Port Jean Gau
@@ -7916,7 +7886,6 @@ meter	osm_a	name_a	osm_b	name_b
 515	way/256056542	Ebeltoft Havn	way/613270760	Ebeltoft Skudehavn
 515	way/27862483	MYCG	way/740532995	Segler-Vereinigung Geesthacht e.V.
 515	way/41821763	Eynesbury Marina	way/406221787	River Mill Marina
-516	node/1230142557	Tankschiffliegehafen	node/2984587732	Liegestelle Sport 24h
 516	node/12662927021	ponton D	node/12662938955	ponton 3
 516	node/12662927021	ponton D	node/12662938959	ponton 10
 516	node/13391454104	Cala en Brut	node/13391454105	Cala en Blanes
@@ -8021,7 +7990,6 @@ meter	osm_a	name_a	osm_b	name_b
 526	node/1487634580	Segelclub Seeadler	node/1487637111	Ennskraftwerke
 526	node/1721472106	Rusnės keleivinė prieplauka	relation/8539804	Pakalnės uostas
 526	node/2105871908	Yacht-Club Norden	node/2666290826	Fischereihafen Osthafen
-526	node/2118801577	Liegestelle Sport 24h	node/2152934671	Bootshaus Kimmritz
 526	node/2990203953	A.R.S Maestrale e Bora	way/296076905	Porto Canale
 526	node/4544631743	UNI	way/980245488	BAHART kikötő
 526	node/8746771402	Bacino IV	node/8746771406	Bacino San Giusto
@@ -8101,7 +8069,6 @@ meter	osm_a	name_a	osm_b	name_b
 533	way/1493721183	Dàrsena Nacional	way/1553389591	Confraria de Pescadors de Barcelona
 533	way/41380118	Marina Pogoń	way/1253911697	Yacht Klub Polski Szczecin
 533	way/993718282	Leeuwarder Jachthaven	way/1088865661	Jachthaven De Oude Potmarge
-534	node/14362392972	C3	node/14362392973	C2
 534	node/1787104768	Jachtwerf Wurth en Zoon	relation/20279521	WV Aegir
 534	node/2748629017	Obere Güll	way/424707237	Privathafen Mainau
 534	node/392539496	Privatanleger Waldhotel am See Berlin-Schmöckwitz	way/375693302	Wassersportzentrum (WSZ) der HU
@@ -8189,7 +8156,6 @@ meter	osm_a	name_a	osm_b	name_b
 542	node/5802446436	Museumshavn	node/5838994953	Fiskerihavn
 542	relation/8725026	Marina Rydzewo	relation/8725029	Port Bogaczewo
 542	way/1040887340	Yrjösenpohjan venelaiturit	way/1055189851	Venehamina satama
-542	way/326118187	Лодочная станция	way/1421366159	Причал №15
 542	way/980740139	Kapp Båthavn	way/980740140	Hekshus Båthavn
 543	node/10004483986	Circolo velico Ortigia	way/436168250	Siracusa Marina Yachting
 543	node/12662927021	ponton D	node/12662938958	ponton 11
@@ -8284,7 +8250,6 @@ meter	osm_a	name_a	osm_b	name_b
 551	way/6139014	Außenhafen	way/35814038	Parallelhafen
 551	way/977592035	Mala Zaka	way/977592050	Blejski otok - Severna stran
 552	node/12662927020	ponton C	node/12662938959	ponton 10
-552	node/14362392965	A3	node/14362392967	A1
 552	node/9008478482	Steinsodden	node/9008478483	Korgerstuodden
 552	way/167302634	English Harbour	way/167304089	La Collette Yacht Basin
 552	way/619514181	Autoterminal Barcelona	way/620358647	Primagas
@@ -8300,7 +8265,6 @@ meter	osm_a	name_a	osm_b	name_b
 553	way/288901284	Bojenfeld B Allensbach	way/288901528	Bojenfeld A Allensbach
 553	way/337003498	Porto alla Resiga	way/337003506	Porto Vecchio
 554	node/13389187143	Cala Estremer	node/13389187144	Cala Castell
-554	node/1922002328	Bootshaus Zeuthener See	node/2088448395	Liegestelle Sport 24h
 554	node/2082822959	Arnisser Segel-Club	node/2082822961	Mittelmann's Werft
 554	node/2167047566	Bijko jachtbouw	node/2242761555	Multiship Harlingen
 554	node/3091396711	Dársena Santa Babara	node/3092013389	Melilla
@@ -8643,7 +8607,6 @@ meter	osm_a	name_a	osm_b	name_b
 585	way/284193225	Marina am Tiefen See	way/846760586	Angelsportverein Freundschaft
 585	way/342726595	Am Hinzenberg	way/651218392	Angeln und Wassersport Potsdam e.V.
 585	way/888601786	Jachthaven North-Line Yachts	way/1014132404	Ouwehand's Jachtwerf
-586	node/3438572629	C2	way/336775871	Zona Nord
 586	node/431059918	Barth	node/2125229620	Maritim Center Marks Barth
 586	node/8920392566	Täppbryggan	node/8920392567	Norra sjön
 586	way/142047518	Port-Solidor	relation/5834873	Port des Sablons
@@ -8730,7 +8693,6 @@ meter	osm_a	name_a	osm_b	name_b
 596	way/988935555	Vorma Båthavn	way/989043396	Eidsvoll Gjestebrygge
 597	node/11134873371	Ruder-Club Tegel 1886 e.V.	way/178853231	Bezirksamt Berlin-Mitte Bootshaus Tegel
 597	node/12662927028	ponton L	node/12662929816	ponton 17
-597	node/2084506275	Liegestelle Sport 24h	way/200578704	MC Alt Stralau
 597	node/2990203954	A.R.S Nauticclub Grado	way/296076904	Porto Mandracchio
 597	node/3985601249	Cala de s'Estany d'en Mas	node/3985601251	Cala Mendia
 597	node/431042192	Wassersport-Verein 1921	way/1032017022	Motorwassersportclub Berlin-Grünau
@@ -8746,7 +8708,6 @@ meter	osm_a	name_a	osm_b	name_b
 598	way/200164055	Port d'Auteuil	way/200435075	Port de Javel-Haut
 598	way/336798845	"Pod Omegą" sp.j. Stanisław Kasprzak	way/440649795	Port 110
 598	way/979342011	Djurgårdshamnen	relation/6259602	Kungliga Motorbåt Klubben
-599	node/1723706445	Hafen Schiffskontor	node/2084506275	Liegestelle Sport 24h
 599	node/1912811198	VWL Verein Wassersport Lesum	node/1912811249	Segel-Club Niedersachsen-Burg
 599	node/2066388007	Ormos Zoyioryia	node/2066388010	Lazaretto Cove
 599	node/2088587522	Port de Commerce	node/4581585512	Bassin 6
@@ -8784,7 +8745,6 @@ meter	osm_a	name_a	osm_b	name_b
 602	node/2037964316	Yachthafen Schwimmclub Wiesbaden 1911 e.V.	node/2370507140	Bootsvermietung Bähr
 602	node/2045901437	Segelclub Zeuthen e.V.	way/376785065	Bootshaus Franz
 602	node/2086558098	Liegestelle Sport 6:00-22:00 Uhr	way/727048321	ESV Lok Potsdam e.V. - Abteilung Wassersport
-602	node/2088448395	Liegestelle Sport 24h	way/147330481	Yachthafen Schmöckwitz
 602	node/4224617905	Mellerup Lystbådehavn	way/484233261	Voer Anlægsbro
 602	way/1040887340	Yrjösenpohjan venelaiturit	way/1040887344	Lepikönrannan venesatama
 602	way/1136432470	Talvesadam	way/1158973717	Japsi sadam
@@ -9177,8 +9137,6 @@ meter	osm_a	name_a	osm_b	name_b
 642	way/183214433	Watersportcentrum Maasbommel	way/183214434	WSV 'De Gouden Ham'
 642	way/200459443	Port de la Conférence	way/203344194	Port Alexandre III
 642	way/385229763	Port Nautica	way/1080912337	Port du Reposoir
-643	node/10687659390	C10	node/10687659392	C8
-643	node/10687659394	C6	node/10687659396	C4
 643	node/11103232270	Csörlő	way/340892420	Király motorcsónakszerviz és hajótárolás
 643	node/12662927019	ponton B	node/12662938957	ponton 12
 643	node/1345354124	Darsena Italia	node/4687054413	Darsena della Madonnina
@@ -9192,7 +9150,6 @@ meter	osm_a	name_a	osm_b	name_b
 643	node/4787464007	prague jazz boat	way/487536676	18 Slapy
 643	node/5651078742	Piękny Brzeg	way/964546568	Róża wiatrów
 643	way/287691443	Segelverein Potsdamer Adler	way/351154867	MBC Havelbucht
-644	node/10687659391	C9	node/10687659393	C7
 644	node/12662927018	ponton A	node/12662938959	ponton 10
 644	node/13970287253	Spiaggia dei Vricci	node/13970287254	Le Cattedrali
 644	node/2084847947	Segelschiffrestaurant "Klipper"	way/32622717	Yachthafen Stralau
@@ -9203,8 +9160,6 @@ meter	osm_a	name_a	osm_b	name_b
 644	way/351154867	MBC Havelbucht	way/596070933	Sportgemeinschaft Segeln Potsdam
 644	way/365868532	Banchina Margreth Porto Nogaro	way/1289743992	Marina San Giorgio di Nogaro
 644	way/970647485	Niittytien veneranta	way/971625622	Nurmitien veneranta
-645	node/10687659395	C5	node/10687659397	C3
-645	node/10687659397	C3	node/10687659399	C1
 645	node/12662927028	ponton L	node/12662929818	ponton 19
 645	node/1492220080	Avant-port	way/837371099	Fécamp - Port à sec
 645	node/2076369269	Potsdamer Segler-Club Wiking	way/342726595	Am Hinzenberg
@@ -9215,8 +9170,6 @@ meter	osm_a	name_a	osm_b	name_b
 645	node/9524555536	PL2	node/9524555541	PL7
 645	node/9524555537	PL3	node/9524555541	PL7
 645	node/9524555537	PL3	node/9524555542	PL8
-646	node/10687659392	C8	node/10687659394	C6
-646	node/10687659393	C7	node/10687659395	C5
 646	node/1844098953	Faul AG	node/5779106586	Oberrieden
 646	node/1868515465	Bootshaus Eiswerder	node/2102979813	Wassersportclub Grün-Silber-Orange Berlin 1952
 646	node/2487364780	Cala Varques	node/13390634974	Cala Sequer
@@ -9246,7 +9199,6 @@ meter	osm_a	name_a	osm_b	name_b
 649	node/4097568572	Ruhrorter Yachtclub e.V. - Nord	way/4088510	Rheinpreußenhafen
 649	way/132166825	Hansa Steg	way/943560476	Alster-Jugend-Segelclub e.V.
 649	way/23678950	Стенка	way/55952271	Ада
-650	node/14362392964	A4	node/14362392966	A2
 650	node/1813671639	Le Boat	way/334848145	Porto di Casier
 650	node/1834390161	Gemeentehaven Sneek	node/11050398790	De Domp 1
 650	node/2467670728	Gjøahaven	way/1536140716	Kongelig Norsk Seilforening
@@ -9267,7 +9219,6 @@ meter	osm_a	name_a	osm_b	name_b
 651	node/9502703439	Porte 11	relation/10793140	Passe de la Madrague
 651	node/9502703440	Porte 12	relation/10793140	Passe de la Madrague
 651	way/4082329	Bassin de l'Arsenal	way/200164067	Port des Célestins
-652	node/10687659398	C2	node/10687659399	C1
 652	node/1167723569	Kuorekarinsalmen venesatama	way/122001425	Boatman Group
 652	node/11816145325	Excursii in Delta Dunarea	node/14074407535	PA3 Navrom Delta
 652	node/14059924388	Reederei Lüdicke	way/178853322	Angelclub-Malchsee 1921 e.V.
@@ -9288,7 +9239,6 @@ meter	osm_a	name_a	osm_b	name_b
 653	way/292574187	Centrum Wypoczynkowo-Szkoleniowe Unitra	way/462947522	Jacht Klub Siarkopol
 653	way/627539001	Przystań Unia	way/627539002	Kalski Gościniec
 653	way/88092103	Raatin venesatama	way/170969798	Tervaporvarinpuiston venetelaranta I
-654	node/10687659396	C4	node/10687659398	C2
 654	node/1204259708	Hobro Lystbådehavn	node/1359134154	Hobro Både- og Fiskerihavn
 654	node/2729058935	Laase	node/4267621715	Grubnow
 654	node/4808414922	Причал № 1	node/8925947834	Причал № 3
@@ -9298,7 +9248,6 @@ meter	osm_a	name_a	osm_b	name_b
 655	node/11050617931	Przystań Naftowiec 2	way/462947522	Jacht Klub Siarkopol
 655	node/1337624692	Port de Sa Nitja	node/13391483607	Cala Torta
 655	node/1360638223	Circolo Vela Torbole	relation/1697487	Porto Vecchio
-655	node/2084506275	Liegestelle Sport 24h	way/32622717	Yachthafen Stralau
 655	node/2250367710	Hundested Lystbådehavn	node/4293825836	Trafikhavn
 655	node/4346968131	Fiskhamn	way/363856120	Klöveröns Båtvarv
 655	way/157299717	АНО "Центр маломерного флота"	way/163079499	Рабочая гавань
@@ -9349,7 +9298,6 @@ meter	osm_a	name_a	osm_b	name_b
 660	node/12662927023	ponton G	node/12662929814	ponton 15
 660	node/1306457785	Middenhaven	way/601243700	Regatta Center Medemblik
 660	node/13575953975	Anleger 3	way/1359636205	Fischereihafen Travemünde
-660	node/14362392963	A5	node/14362392965	A3
 660	node/1805804280	Darse 2	relation/19947840	Port de Plaisance Yacht Club de la Mer du Nord
 660	node/1913925920	Porto Peschereccio	way/608883541	Marina Yachting Portolano
 660	node/1941715878	SC Spandau e.V.	node/7658574488	Sportbootanleger
@@ -9385,7 +9333,6 @@ meter	osm_a	name_a	osm_b	name_b
 663	way/450128288	Margretheholms Havn	way/625235376	Søndre Refshalebassin
 663	way/534621863	Stowarzyszenie Sportów Wodnych "Górnik"	way/1147246291	Szkoła Żeglarska "Maytur"
 664	node/2026499262	Hafen & Marina Schweriner Segler-Verein 1894	way/111597110	Bootsservice Fierke
-664	node/431042145	Bootshaus Krampenblick	node/2088448395	Liegestelle Sport 24h
 664	node/4519778739	Jachthaven Sneekerhof	way/1236145709	Jachthaven Kaap Hoorn
 664	node/959158106	Le petit Port de Fouchécourt	node/2991210574	Halte nautique de Baulay
 664	way/738040679	Mouillage des Carrelets	relation/2825028	Port de Socoa
@@ -9409,7 +9356,6 @@ meter	osm_a	name_a	osm_b	name_b
 666	node/2145285382	Rudergesellschaft Wiesbaden-Biebrich 1888	relation/11066614	Schiersteiner Hafen
 666	node/2467670728	Gjøahaven	way/1536141871	Kongen Båthavn
 666	node/2885742076	Van Heusden Watersport	node/2905904941	Jachthaven De Toekomst
-666	node/392539496	Privatanleger Waldhotel am See Berlin-Schmöckwitz	node/2088448395	Liegestelle Sport 24h
 666	node/4927474921	Korsør Flådestation	way/615530189	Korsør Havn
 666	node/5695444924	Przystań Kapitańska	way/450117211	Marina Topacz
 666	node/5884434989	Port de Sóller	way/793518443	Marina Tramontana
@@ -9642,7 +9588,6 @@ meter	osm_a	name_a	osm_b	name_b
 691	node/4584499391	Grangemoore Quay	way/805832737	Cardiff Marina
 691	node/5359784727	Hellesøy	node/5359784820	Hellesund
 691	node/648259055	Segelclub der Schele-Schule	node/2917958246	Marina Toni`s Werft
-691	node/7667075052	Liegestelle Sport 24h	way/958671527	Marina Jungfernsee
 691	way/530951010	Passantenhaven Heergerwâl	way/1237385333	Hoora
 692	node/1251597003	WSVW	node/1251597082	Delta Marina
 692	node/1251597082	Delta Marina	node/2886688523	Watersportvereniging Wolphaartsdijk
@@ -9721,7 +9666,6 @@ meter	osm_a	name_a	osm_b	name_b
 699	node/1145576649	Hvalpsund Fiskerihavn	node/1576917196	Hvalpsund Lystbådehavn
 699	node/12662927021	ponton D	node/12662929810	ponton 21
 699	node/2454260044	Flaneur Bucht	node/2898339172	SV Wasserfreunde Grünau e.V
-699	node/253778129	Port of Joensuu	way/597166280	Pienvenesatama
 699	node/3985602187	Cala Solana	node/3985602188	Ses Caletes
 699	node/447770137	Port Grimaud	way/30147415	Marines de Cogolin
 699	way/1289743986	Marina&Shipyard Sant'Andrea	way/1289743990	ASD Nautica San Giorgio
@@ -9861,10 +9805,8 @@ meter	osm_a	name_a	osm_b	name_b
 714	way/1460440650	Fornebos Vels båthavn	way/1539178810	Sollerudstranda båtforening
 714	way/27009701	Segelschule Käpt'n Prüsse	way/132166819	OSG Steg
 714	way/616142245	Puerto Villaricos	way/657081913	Puerto Deportivo de Villaricos La Esperanza
-715	node/10687659397	C3	node/10687659398	C2
 715	node/12662927021	ponton D	node/12662929814	ponton 15
 715	node/1341135430	Esso Servicenter	node/6813603208	Down Town gjestebrygge
-715	node/14362392964	A4	node/14362392965	A3
 715	node/1708397972	Cais da Juromenha	way/970042281	Puerto Deportivo Villarreal
 715	node/2125229618	Essener Yacht-Club	way/678898003	Essener Segler-Club Ruhrau e.V.
 715	node/3985602164	Son Moll	way/704461814	Club Nàutic de Cala Rajada
@@ -9959,7 +9901,6 @@ meter	osm_a	name_a	osm_b	name_b
 723	way/90113190	Karperskuyl	way/250090400	Grashaven
 724	node/12662927022	ponton F	node/12662929816	ponton 17
 724	node/13575953978	Anleger 4	way/1359636205	Fischereihafen Travemünde
-724	node/14362392966	A2	node/14362392967	A1
 724	node/1787104768	Jachtwerf Wurth en Zoon	way/824698941	Watersportvereniging "ALVO"
 724	node/2301010083	LCF - Hafenanlage Amerikahafen	relation/18210513	Marina Cuxhaven
 724	node/4532598851	Place de la Concorde	way/414201290	L'île aux brumes
@@ -9980,7 +9921,6 @@ meter	osm_a	name_a	osm_b	name_b
 725	node/9002808114	Bekkodden	way/987637198	Kvitsandvika Båthavn
 725	node/9182579745	Bacino V	node/9182579746	Bacino VI
 725	node/9908398888	Vieux Port d'Ouchy	relation/1232069	Compagnie générale de navigation sur le lac Léman
-725	way/1144337727	N2	way/1144337728	N1
 725	way/386612919	Pensarn Harbour	way/386614045	Llandanwg Harbour
 725	way/517875509	Märkischer Seglerverein Beetzsee	way/991081456	Stadtmarina Brandenburg
 725	way/618112529	Port de Barcelona	way/618980429	Tráfico de Mercancías
@@ -10077,7 +10017,6 @@ meter	osm_a	name_a	osm_b	name_b
 735	node/7216939744	Segler- und Ruderclub Simssee	way/852069423	SBV Simssee Baierbach
 735	way/239750583	Zbąszyński Klub Żeglarski	way/281799229	Stanica Wędkarska
 735	way/30605750	Sarbuvollen Båtforening	way/1486662416	Strand Båtforening
-736	node/10687659389	C11	node/10687659391	C9
 736	node/1785109039	SC Brise 1898	node/2088448394	Kaffee Liebig
 736	node/2755932819	Hafen Plau am See	way/182560105	Marina Plau am See
 736	node/2917958246	Marina Toni`s Werft	node/2951391588	Wander-Segler-Verein 1922 e.V.
@@ -10089,7 +10028,6 @@ meter	osm_a	name_a	osm_b	name_b
 736	way/241781761	Eisenbahner Segelverein Hansa	way/1089811716	Neue Trave Werft
 736	way/308613702	Bassin de Radoub	relation/10793138	Passe de la Pinède
 736	way/618268543	Port Vell	way/1552256064	Marina Port Vell
-737	node/10687659388	C12	node/10687659390	C10
 737	node/10856080354	Cala di Nera	node/10856080355	Istia
 737	node/1345353706	Darsena Europa	way/84037394	Darsena Viareggio
 737	node/4187316562	Τουριστικό Λιμάνι	way/844205995	λιμάνι Μανδράκι
@@ -10260,7 +10198,6 @@ meter	osm_a	name_a	osm_b	name_b
 754	node/8920392566	Täppbryggan	node/8920392568	Yttre hamnen
 754	node/9007337988	Biri Travbane	relation/11094178	Biri Båthavn
 754	way/112865794	Campingfreunde Reffenthal Bootsteg 3	way/712400725	YCOA Yacht-Club Otterstadt im Angelwald
-754	way/1144337724	N5	way/1144337725	N4
 754	way/1393208828	ArtJacht -Czarter Jachtów	way/1412119699	Przystań KOZŻ
 754	way/164810956	Port de Commerce	way/164810958	Port des Mouettes
 755	node/1345353916	Darsena Toscana	node/4687054413	Darsena della Madonnina
@@ -10275,7 +10212,6 @@ meter	osm_a	name_a	osm_b	name_b
 755	way/627539000	Zatoka Kal	way/964546568	Róża wiatrów
 756	node/2115693338	Yacht-Club Stößensee - YCST	node/2917958246	Marina Toni`s Werft
 756	node/4253158326	Gare Croisières du J4	relation/10793152	Bassin de la Grande Joliette
-756	node/4295284163	Skeppsviken	way/1080465477	U1
 756	node/618823149	Westhafen	node/807043961	Ölhafen
 756	node/805736526	Nokian satama	way/1434667166	Vihola
 756	way/1554492941	Dàrsena de Sant Bertran	way/1554883625	Reial Club Marítim de Barcelona
@@ -10301,7 +10237,6 @@ meter	osm_a	name_a	osm_b	name_b
 759	node/14059924387	Reederei Markus Bethke	way/178852577	Segler-Vereinigung Tegel e.V.
 759	node/1939776721	Cala Blanca	node/1939776723	Camp de Mar
 759	node/2075962671	Yachthafen Captain's Inn	node/8626455520	Yachthafen am Pichelssee
-759	node/3438572627	S2	node/3438572628	C1
 759	way/346050057	Rålambshovs båtklubb	way/762729484	Göta segelsällskap
 759	way/4082329	Bassin de l'Arsenal	way/23644271	Port de la Tournelle
 760	node/12662927022	ponton F	node/12662929818	ponton 19
@@ -10583,7 +10518,6 @@ meter	osm_a	name_a	osm_b	name_b
 792	node/2102979804	Polizei-Sport-Verein	node/2613230095	Sportboot Liegestelle 24h
 792	node/2141490291	Soutukeskus	node/14072566966	Ratinan suvannon vierasvenesatama
 792	node/5638585937	No2	way/590607441	Anchorage No 18E
-792	way/1144337726	N3	way/1144337727	N2
 792	way/347997344	American International Yacht Club Berlin	way/369965033	WSW Berlin
 793	node/2105871858	Ratzeburger Segler-Verein Osthafen	way/525248035	Wasser Sportklub Römnitzer Mühle e.V.
 793	node/266384565	Porto di Palermo	node/13147587001	Si.ti.mar srl
@@ -10619,18 +10553,9 @@ meter	osm_a	name_a	osm_b	name_b
 796	way/127077120	Motorboot Club Groningen	way/755436289	JSG Stadswerf
 796	way/185016124	D-Marin Borik	way/1284972716	Draženica
 796	way/230063631	Marina Flensburg	way/271734559	Polizeihafen
-797	node/1799470309	Citymarina Rummelsburg	node/2084506275	Liegestelle Sport 24h
 797	node/431049846	Yachthafen Havelberg	node/2038093444	ELCH Havelberg
 797	node/6088727431	Dana Ro-Ro5	node/11141861508	Dana de Gabare
 797	node/9002808132	Smestadvika	node/9002808134	Boligvika
-797	node/9325475624	S12	node/9325475625	S11
-797	node/9325475624	S12	node/9325475637	S9
-797	node/9325475625	S11	node/9325475626	S10
-797	node/9325475625	S11	node/9325475638	S8
-797	node/9325475626	S10	node/9325475639	S7
-797	node/9325475637	S9	node/9325475640	S6
-797	node/9325475638	S8	node/9325475641	S5
-797	node/9325475639	S7	node/9325475642	S4
 797	way/523451442	Przystań przy Hotelu Gołębiewskim	way/626489424	Marina Miko
 797	way/618268543	Port Vell	way/1493721183	Dàrsena Nacional
 798	node/10126466369	Mallorca Bootcharter Anhänger	node/13390634120	Caló de ses Dones
@@ -10647,7 +10572,6 @@ meter	osm_a	name_a	osm_b	name_b
 799	node/2606646366	Halte Nautique de Montbard	node/2606646374	Port de Plaisance de Montbard
 799	node/4274036629	Port of Gibraltar	way/554118855	Mid Harbour Boat Owners' Marina
 799	node/431082492	Sportboothafen Berching - Berchinger Yacht Club Wassersportfreunde	node/12237325160	Lände Berching
-799	node/4332196354	Gustavsberg gästhamn	way/1080465477	U1
 799	way/105299711	Yachthafen Schloss Helmsdorf	way/147270772	Segelsportgruppe Dornier
 799	way/1361970108	Verket småbåthavn	way/1430843512	Moss motorbåtforening
 800	node/13970248947	Montagnello / Faraoni	node/13970248948	Faraglioni di Maria Rosa
@@ -10655,12 +10579,6 @@ meter	osm_a	name_a	osm_b	name_b
 800	node/431053757	Marina Schiffswerft Kiebitzberg	node/12596002836	BunBo Standort Havelberg
 800	node/5359784809	Ulsteinvik	way/393012265	Borgstein Marina
 800	node/8920392565	Kolnäsbryggan	node/8920392568	Yttre hamnen
-800	node/9325475637	S9	node/9325475638	S8
-800	node/9325475640	S6	node/9325475641	S5
-800	node/9325475640	S6	node/9325475643	S3
-800	node/9325475641	S5	node/9325475644	S2
-800	node/9325475642	S4	node/9325475645	S1
-800	node/9325475643	S3	node/9325475644	S2
 800	node/941439946	Porto Vecchio	node/5037891299	Pontile GLEM
 800	way/618634979	Terminal F2	way/851919291	Barcelona Nautic Center
 800	way/77512510	Hjarnø Havn	way/77512518	Snaptun Lystbådehavn
@@ -10688,9 +10606,6 @@ meter	osm_a	name_a	osm_b	name_b
 803	node/2076369269	Potsdamer Segler-Club Wiking	way/596070933	Sportgemeinschaft Segeln Potsdam
 803	node/5014382855	Küçük Liman	relation/7444939	Amasra Büyük Limanı
 803	node/7817523403	Bootsservice Medow	way/991081456	Stadtmarina Brandenburg
-803	node/9325475638	S8	node/9325475639	S7
-803	node/9325475641	S5	node/9325475642	S4
-803	node/9325475644	S2	node/9325475645	S1
 803	relation/12104506	Port de Théoule	relation/12104508	Port de la Rague
 803	relation/2609777	Puerto Deportivo de Santa Cruz	relation/2609789	Dársena de Anaga
 803	way/1441979755	Bathurst Basin	way/1442419740	Harbour Inlet
@@ -10824,7 +10739,6 @@ meter	osm_a	name_a	osm_b	name_b
 817	way/111346835	Steelhaven, La Bonne Aventure en WV Nautilus	way/111354224	Hermus Watersport
 817	way/187708451	Nattvikens gästhamn	way/341201328	Kanaluddens gästhamn/båtplatser
 817	way/262194968	Terminal Lorenzini	relation/14480556	Terminal Darsena Toscana
-817	way/97293801	Wsv De Kooihaven	way/215357086	Passantenhaven
 818	node/2245007675	Egense Lystbådehavn	way/1036639244	Hals Jollehavn
 818	node/3863962657	Jachthaven De Oude Werf	node/3866105131	Watersport Vereniging Schiphol
 818	node/433805611	Fürstenberger Yachtclub	node/2132453383	Haus an der Havel
@@ -10979,7 +10893,6 @@ meter	osm_a	name_a	osm_b	name_b
 835	node/2077347427	Segler-Verein Stade	way/33046264	Motor- und Yachtclub Stade e.V. - Unterhafen
 835	node/2110739856	Bootswerft Marchot	way/287691443	Segelverein Potsdamer Adler
 835	node/2110740081	Öffentliche Sportbootliegestelle Potsdam Alte Fahrt	way/284193225	Marina am Tiefen See
-835	node/4010464395	Rödön/Lindesnäs	way/1080465477	U1
 835	node/4136584390	Erneside	node/4136699584	Henry Street South
 835	node/4684382079	Fiera di Genova Marina	way/462980300	Porticciolo Duca degli Abruzzi
 835	node/4927474921	Korsør Flådestation	way/615528650	Korsør Lystbådehavn
@@ -11065,7 +10978,6 @@ meter	osm_a	name_a	osm_b	name_b
 843	way/26594014	Stöckter Hafen	way/161027940	Yachtclub Zollenspieker
 843	way/514183662	Seapoint Porkkala Marin	way/1363560253	Lähteelän venesatama
 843	way/97401123	Watersportvereniging De Kaag	way/860247344	Jachthaven Zwanengat
-844	node/458390005	Vierasvenesatama	way/917503383	Juurikkasaaren satama
 844	node/700235935	Ocean Quay Marina	node/700236002	Kemps Quay Marina
 844	node/7663867376	Przystań Wyspy Energetyk 1	way/1411763257	Przystań Wodna Dedal
 844	way/160026367	Potsdamer Yacht Club	way/160026373	Potsdamer Ruder Club - Germania
@@ -11090,7 +11002,6 @@ meter	osm_a	name_a	osm_b	name_b
 847	node/1929583930	Yachtclub Malchow	way/1345308188	Stadthafen Malchow
 847	node/1996658502	Marina di Bogliaco	way/121561723	Nautica Feltrinelli
 847	node/2367499209	Wassersportfreunde Bleiau e.V.	way/761731357	Hafen Segelclub Mainspitze e.V.
-847	node/4689271512	Porticciolo del Molosiglio	node/14362392967	A1
 847	node/489958661	Schwimmsteg Gehlsdorf	node/2154436825	Yachtclub Warnow
 847	way/1291039459	Harlinger Watersportvereniging	way/1292424696	Jachtwerf Atlantic
 847	way/200435077	Port des Champs-Élysées	way/414201293	L'île aux oiseaux
@@ -11117,7 +11028,6 @@ meter	osm_a	name_a	osm_b	name_b
 849	way/704378538	Pärnu Jahtklubi jahisadam	way/1175626306	Vana-Sauga Sadam
 850	node/1728565651	Seehotel Zeuthen	node/2816772646	SV Neander
 850	node/2075962666	VWG Berlin	node/8626455520	Yachthafen am Pichelssee
-850	node/3438572637	C3	way/336775871	Zona Nord
 850	node/4687811573	Fiumicino Porto Romano Harbour	node/4687820677	Cantieri di Ostia Small Harbour
 850	node/7663867377	Przystań ROZŻ	way/1411763257	Przystań Wodna Dedal
 850	node/8968928875	Przystań Wodna	way/281799229	Stanica Wędkarska
@@ -11145,7 +11055,6 @@ meter	osm_a	name_a	osm_b	name_b
 853	node/4684382081	Marina Molo Vecchio	way/148457415	Terminal SECH
 853	node/4687192562	Livorno Port	way/546455406	Darsena Morosini
 853	way/1013497047	Passantenhaven Sassenheim	way/1065110292	Hoflee
-853	way/1144337725	N4	way/1144337726	N3
 853	way/242878364	Navigationssällskapet	way/508701054	Biskopsuddens Marina
 854	node/1678126073	Alter Hafen Hooksiel	way/155415564	WSV Hooksiel
 854	node/2443111247	Yachtclub Hansa Harburg	node/8972106023	Hausboothafen Hamburg
@@ -11300,7 +11209,6 @@ meter	osm_a	name_a	osm_b	name_b
 872	node/12662927019	ponton B	node/12662929819	ponton 20
 872	node/1346947133	Keszthelyi Yacht Club	node/1347792235	Keszthely kikötő
 872	node/14059924387	Reederei Markus Bethke	way/178853228	Club Nautique Français de Tegel
-872	node/3452384136	Porticciolo di Santa Lucia	node/14362392967	A1
 872	node/3819048659	Port de Caneta	way/378528961	Hondarribia - Txingudi
 872	node/431077976	Wassersportverein Neptun Barßel	node/10685747460	WSC Poseidon Barßel e.V.
 872	node/7319122393	st. Jachthaven Medemblik	way/601243700	Regatta Center Medemblik
@@ -11476,7 +11384,6 @@ meter	osm_a	name_a	osm_b	name_b
 890	node/9524555520	118A	node/9524555541	PL7
 890	way/53523789	Pursilahdenallas	way/53523793	Mustalahden venesatama
 891	node/1354001812	Port de Saumaty	relation/10793150	Avant-port Nord
-891	node/14362392965	A3	node/14362392966	A2
 891	node/2221808041	Confraría de Pescadores	way/368735392	Porto da Lagoa
 891	node/2385147222	Hafen Emmerich	way/257477346	Emmerich
 891	way/1539178810	Sollerudstranda båtforening	way/1539657524	Killingen båtforening
@@ -11503,7 +11410,6 @@ meter	osm_a	name_a	osm_b	name_b
 893	node/685988205	The Lagoon	node/5965922900	Rosslare Europort
 893	node/8746771405	Bacino San Giorgio	way/1343300110	Yacht Club Adriaco
 893	node/8838495201	Inre hamnen	node/8838495203	Öhmansterminalen
-893	node/9325475623	S13	node/9325475626	S10
 893	way/20288842	Moss havn	way/1394937685	Søly båthavn
 893	way/286188359	Port de La Hume	way/802920636	Port ostréicole du Rocher
 893	way/971642492	Valkamarannan veneranta (itäosa)	way/974007042	Vahverotien veneranta
@@ -11727,7 +11633,6 @@ meter	osm_a	name_a	osm_b	name_b
 916	way/118351142	Bootshafen Schiffle	way/174737979	Privater Bootshafen
 916	way/530570932	Pitkäsalmen venevalkama	way/530575851	Laitsalmen venevalkama
 916	way/783045226	Brf Sjöfortets brygga	way/1436860710	Essinge Båtklubb
-917	node/10687659390	C10	node/10687659391	C9
 917	node/1787496247	Anse de Pouldavid	node/1787496248	Le Port Rhu
 917	node/1840496375	Hafen Melle	way/1467262160	Sportboothafen Loddin
 917	node/1932402684	Motor-Boot-Club Berlin e. V.	way/160026371	Bootswerft Ruhs
@@ -11736,16 +11641,11 @@ meter	osm_a	name_a	osm_b	name_b
 917	node/672099243	Wasserwanderrastplatz Salzhofufer	way/79290032	SG Einheit Brandenburg e. V.
 917	node/975673162	Bucht Soline 2, Insel Pašman	node/975673410	Bucht Soline 1, Insel Pašman
 917	way/1042436963	Salmenvirran laituripaikat	way/1042436968	Saviniemen laituripaikat
-918	node/10687659392	C8	node/10687659393	C7
-918	node/10687659404	B4	node/10687677005	B3
-918	node/10687659404	B4	node/10687677006	B2
-918	node/10687677006	B2	node/10687677007	B1
 918	node/355616936	Hoffmannstadt Fallersleben e.V.	way/1417680731	1. Motorbootclub Wolfsburg
 918	node/9007337621	Hekshus	way/980740139	Kapp Båthavn
 918	way/234349723	Osney Mill Marina (Upper)	way/1302283620	College Cruisers
 918	way/41190328	Plymouth Yacht Haven	way/125475910	Queen Anne's Battery
 918	way/727048321	ESV Lok Potsdam e.V. - Abteilung Wassersport	way/907002621	Potsdamer Seesportclub
-919	node/10687677005	B3	node/10687677007	B1
 919	node/1932402684	Motor-Boot-Club Berlin e. V.	way/183791653	Yachthafen am großen Wannsee 4
 919	node/1941715878	SC Spandau e.V.	node/13099993595	Segel-Club Frithjof-Haveleck e.V.
 919	node/2462097818	Marina Naviera Balear	way/224127599	La Llotja
@@ -11756,8 +11656,6 @@ meter	osm_a	name_a	osm_b	name_b
 919	way/50946161	Watersportclub Treech'42	way/381246020	WSV Randwijck
 919	way/616561765	Holbæk Bådelaug	way/1038334508	Holbæk Gammel Havn
 919	way/618739591	Terminal F3	way/851919291	Barcelona Nautic Center
-920	node/10687659388	C12	node/10687659389	C11
-920	node/10687659402	B6	node/10687659403	B5
 920	node/1264036328	Moltrasio	node/1342136381	P.za G. CASARTELLI
 920	node/1310357807	Motor Yacht Club Gent	node/2533754699	Gent Centrum Yacht Club
 920	node/2076122899	Anleger Gäste Fischrestaurante Arielle	node/2076122918	Marina Zur Anglerklause
@@ -11767,14 +11665,12 @@ meter	osm_a	name_a	osm_b	name_b
 920	node/448255043	Huddinge båtklubb	way/287905241	Slagsta Marina
 920	way/1361970105	Verket gjestehavn	way/1562462790	Moss marina
 920	way/161671198	Port de Saint-Malo	relation/5834873	Port des Sablons
-921	node/10687659394	C6	node/10687659395	C5
 921	node/5359784809	Ulsteinvik	way/393012264	Borgstein Marina2
 921	node/613344805	MYCG - Motoryachtclub Germersheim	node/2633907190	Schiffswerft Germersheim
 921	way/1218065128	Framnæs Båthavn	way/1218322415	Gokstad Kystlag
 921	way/1291524335	Port des Pêcheurs	relation/13737067	Port Chantrell
 921	way/385229764	UN Port	way/1080912331	Port de la Perle du Lac
 921	way/68280039	Yachtclub Rhein Mosel	way/232918500	Post-Sportverein
-922	node/10687659403	B5	node/10687677005	B3
 922	node/1251596902	Gemeentehaven Kamperland	node/1251596984	Haringvreter
 922	node/1270148331	Drøbak	node/1270148363	Oscarsborg gjestehavn
 922	node/1395864959	Passantenhaven Geertruidenberg	node/2978966195	Jachthaven DOK12
@@ -11788,8 +11684,6 @@ meter	osm_a	name_a	osm_b	name_b
 922	way/23602889	Port Saint-Bernard	way/200164053	Port d'Austerlitz
 922	way/627539022	Yacht Port Piękna Góra	relation/8728636	MCŻiTW Almatur
 922	way/836363585	Saarow Hafen	way/836772848	Hafen Markgrafenplatz
-923	node/10687659400	B8	node/10687659401	B7
-923	node/10687659402	B6	node/10687659404	B4
 923	node/1422600141	Søndre Frihavn Lystbådehavn	way/625136903	Lynettehavnen
 923	node/2391984672	Marina Rogač	way/619853817	ACI Marina „Veljko Barbieri“ Slano
 923	node/3792969753	Cais 4	way/313713819	Cais 8
@@ -11824,7 +11718,6 @@ meter	osm_a	name_a	osm_b	name_b
 926	way/178853230	Club de Pêche Français de Berlin	way/1512100877	Stern und Kreisschifffahrt GmbH, Tegel/Greenwichpromenade
 926	way/299684668	Балтийский металлургический терминал	way/299684669	Комплекс по перевалке газового конденсата
 926	way/526525609	Kirkkoveneenvalkama	way/530575851	Laitsalmen venevalkama
-927	node/10687659401	B7	node/10687659403	B5
 927	node/1325195339	Delfin kikötő	node/4846987035	Vízi sétány kikötő (lezárt)
 927	node/14002219440	Löka gästhamn	node/14002239525	Kyrkvikens gästhamn
 927	node/1918732405	Marina Wendenschloss	node/2125086193	Yachthafen Wendenschloß - Historisches Fährhaus
@@ -11834,8 +11727,6 @@ meter	osm_a	name_a	osm_b	name_b
 927	node/9979608786	Moll de Las Golondrinas	relation/14503105	Port de Deltebre
 927	relation/1216506	Puerto de Santa Cruz de Tenerife	relation/2609789	Dársena de Anaga
 927	way/1289743988	Marina di Salmastro	way/1289743990	ASD Nautica San Giorgio
-928	node/10687659396	C4	node/10687659397	C3
-928	node/10687659400	B8	node/10687659402	B6
 928	node/10739106132	Punta Perla	node/10916477354	Calanova
 928	node/336009662	Yachthafen Lewandowski	way/138584461	Marina WSC-Eibelstadt
 928	node/3864839257	Watersport Vereniging Aalsmeer	node/12778403482	Jachthaven Rekreatiepark Aalsmeer Poelzijde
@@ -11874,11 +11765,8 @@ meter	osm_a	name_a	osm_b	name_b
 932	way/1136970808	Sassukvere sadam	way/1137025541	Soo sadam
 932	way/867647853	Watersport Twee Provinciën	way/956691773	Jachthaven de Hemrik
 932	way/90113190	Karperskuyl	way/812673289	Marina Kaap Hoorn
-933	node/10687659388	C12	node/10687677006	B2
-933	node/10687659389	C11	node/10687677007	B1
 933	node/1712459586	Jänissaaren pienvenesatama	node/1712459745	Halkoniemen pienvenesatama
 933	node/1789929709	Port de l'allée des Lilas	node/1789935354	Port des Anciens de la Marine
-933	node/2088448395	Liegestelle Sport 24h	node/2940176913	Anleger Zeuthen
 933	node/336009662	Yachthafen Lewandowski	node/1732034361	WSC Eibelstadt
 933	node/4544631743	UNI	way/1263289036	Kékszalag port
 933	way/464334823	Everingen D	way/464334825	Everingen C
@@ -11904,7 +11792,6 @@ meter	osm_a	name_a	osm_b	name_b
 936	node/5017927013	Kejsarhamnen	way/1233503431	Lillbacka Brygga
 936	node/5359784934	Knarholmen	node/5359785029	Alvestadkroken
 936	node/759963498	Seglervereinigung Mannheim	way/269714703	HSK - HANSA-Segelkameradschaft Rhein-Neckar
-936	node/9325475622	S14	node/9325475625	S11
 936	way/127497735	BSB Hafen	way/500253758	Fischereihafen Klingenstein
 936	way/464334821	Everingen E	way/464334823	Everingen D
 937	node/13391394755	Caló d'en Fust	node/13391394757	Cala Binissafúller
@@ -12071,7 +11958,6 @@ meter	osm_a	name_a	osm_b	name_b
 956	way/562590247	Nord-Ost-Hafen	way/991335688	Südreede
 957	node/1044310084	pier36eins	node/1918732405	Marina Wendenschloss
 957	node/1487187786	Hvide Sande Havn	node/9555523286	Lystbådehavn
-957	node/2088448395	Liegestelle Sport 24h	way/1032017022	Motorwassersportclub Berlin-Grünau
 957	node/2415720384	Гавань ЧСЗ	node/2415724465	Каботажна гавань
 957	node/3400403596	Morsø Sejlklub og Marina	node/13048551074	Ørodde Havn
 957	node/3681316450	Norra Hamnens gästhamn	node/4277551636	Stångholmesunds småbåtshamn
@@ -12138,7 +12024,6 @@ meter	osm_a	name_a	osm_b	name_b
 966	node/431089559	Bootsanlegestelle Bad-Ems	way/482076961	Kutscher's Marina
 966	way/437795195	Porto de Lisboa - Terminal de Contentores de Alcântara	way/450048114	Doca de Santo Amaro
 966	way/970109825	Haapaniemen veneranta	way/970311330	Raninin veneranta
-967	node/1976308444	Bootshaus Kelling	node/2118801577	Liegestelle Sport 24h
 967	node/2370583264	Ingelheimer Yacht Club e.V.	node/4142689953	Steganlage "Wasserfreunde Johannisberg"
 967	node/2960925556	Port de l'Aiguillon	way/835299189	Port ostréicole de La Teste
 967	node/9109620615	Flesvika	node/9109620618	Nygardsodden
@@ -12241,14 +12126,12 @@ meter	osm_a	name_a	osm_b	name_b
 978	way/441528544	OSW "Marina"	way/1386814820	Optimist Kornik Team
 979	node/13391350284	Platja de Son Bou	node/13391350285	Platja d'Atalis
 979	node/2990221513	Camping al Bosco	way/1254398732	Marina Splusette
-979	node/4332220268	Uddevalla Hamn	way/1080465477	U1
 979	node/454614854	Borsighafen	node/11134873371	Ruder-Club Tegel 1886 e.V.
 979	node/7159920175	Søndre Havn	way/33453198	Vindeby Havn
 979	node/759587901	Marina Corta	node/4697722314	Lipari La Buona Fonda
 979	node/7663867378	Keja AZS	way/1393208828	ArtJacht -Czarter Jachtów
 979	way/534621863	Stowarzyszenie Sportów Wodnych "Górnik"	way/1147246294	Turystyczny Klub Żeglarski "Klar"
 980	node/12200364218	Hafen Weiße Flotte	way/679099522	Segelkameradschaft Hügel Essen e.V.
-980	node/14362392964	A4	node/14362392967	A1
 980	node/1714192603	Hôtel de Ville	node/4253157726	Gare Maritime de La Major
 980	node/2110739856	Bootswerft Marchot	way/371706988	Steganlage Havelbucht
 980	node/431049846	Yachthafen Havelberg	node/431053757	Marina Schiffswerft Kiebitzberg
@@ -12291,7 +12174,6 @@ meter	osm_a	name_a	osm_b	name_b
 984	node/2623144059	Stocznia "Żegluga Mazurska"	way/507967829	COS Giżycko
 984	node/3985602161	Cala de sa Font	node/3985602162	Es Carregador
 984	node/446289260	Fyruddens hamn	way/855161708	Gryts Motor & Mekaniska Verkstad
-984	way/1099501719	Kanavatien venepaikat	way/1099534775	Vierasvenesatama
 984	way/160026373	Potsdamer Ruder Club - Germania	way/429254812	WSW Berlin Nordsteg
 984	way/166996778	Porto de Recreio Santa Cruz	way/317661528	Marina de Santa Cruz
 984	way/183854764	Butt's Marina	way/597507756	Bedford Basin
@@ -12422,7 +12304,6 @@ meter	osm_a	name_a	osm_b	name_b
 999	node/1422600141	Søndre Frihavn Lystbådehavn	way/625235376	Søndre Refshalebassin
 999	node/1921940693	Bootshaus Hempler	node/13727757531	Segler-Vereinigung Unter-Havel e.V.
 999	node/1996973134	Yachthafen Scheunhornweg	node/2110965213	Ruder-Klub Werder (Havel)
-999	node/3438643770	S1	way/336777590	Zona Sud
 999	node/5357745900	Nordre Bjørnsund	node/5357746234	Søndre Bjørnsund
 999	node/5516680545	Südhafen	way/562572996	Dünenhafen
 999	node/882481955	Prien/Stock	node/4282460444	Yachthotel

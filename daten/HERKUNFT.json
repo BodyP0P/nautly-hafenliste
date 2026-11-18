@@ -1,14 +1,14 @@
 {
- "byte": 4088531,
+ "byte": 4084304,
  "datei": "haefen-europa.geojson",
  "lizenz": "OpenStreetMap, (c) OpenStreetMap-Mitwirkende, ODbL 1.0",
  "lizenzUri": "https://opendatacommons.org/licenses/odbl/1-0/",
  "osmStand": "2026-11-17T19:50:03Z",
  "pmtiles": {
   "ausDatei": "haefen-europa.geojson",
-  "ausSha256": "b374e505e0046d766269006669e416f3c4f96634843c1c2729a232341dce46bb",
+  "ausSha256": "50dd86c00b1d6d97629c42ae52257264a447998b42af5be6d831be6d56aedfdb",
   "befehl": "tippecanoe -q --force -o haefen-europa.pmtiles -l haefen -Z0 -z10 -d14 -r1 --no-feature-limit --no-tile-size-limit -y kind -y name -y osm_sz -y sz_name -y platz --attribution © OpenStreetMap contributors -n Hafenliste Europa (Nautly) -N ODbL-1.0 https://opendatacommons.org/licenses/odbl/1-0/ · https://github.com/BodyP0P/nautly-hafenliste haefen-europa.geojson",
-  "byte": 4614532,
+  "byte": 4607342,
   "datei": "haefen-europa.pmtiles",
   "ebene": "haefen",
   "merkmale": [
@@ -18,7 +18,7 @@
    "sz_name",
    "platz"
   ],
-  "sha256": "99d5dd8be23af96e37eb498683f4002d054ab35f058e3febcd7562c5c67ba37f",
+  "sha256": "a39cc4e0c8175b36ce0839aeedfb1ed2d5c8369b980e393fd2ff606ea5901826",
   "skript": "skript/kacheln.py",
   "skriptSha256": "bdf2c19e4163aa2f8675c6a58d4f2f40eb3926955131638986c57ee009ecb4f6",
   "werkzeug": "tippecanoe v2.79.0",
@@ -29,17 +29,17 @@
  },
  "punkteBenanntNamenlos": {
   "anker": {
-   "benannt": 949,
-   "namenlos": 1378
+   "benannt": 855,
+   "namenlos": 1475
   },
   "hafen": {
-   "benannt": 14905,
-   "namenlos": 3640
+   "benannt": 14853,
+   "namenlos": 3679
   }
  },
  "punkteJeKlasse": {
-  "anker": 2327,
-  "hafen": 18545
+  "anker": 2330,
+  "hafen": 18532
  },
  "quelle": {
   "abfragen": "rezept/<gebiet>.query.txt",
@@ -137,10 +137,10 @@
   "sha256": {
    "abfragen.py": "c95efb30bd11c24dd8b10bfee3d84b83f27b8e5203927aa8b6a60b85ce3c3301",
    "gebiete.json": "926ed4bc894cfe6b2f7303061549a2f81f16fb4b15ff4925cfa3e356c86c420f",
-   "hafenliste.py": "efd02b292ef05b9f5b2a4701048bdad63f26bf394b6de8cc741cff7238494b00"
+   "hafenliste.py": "aea39cf7f347876667ecbe2553fca6c5af064263552946fd7d67b6cc308405f1"
   },
   "skript": "skript/hafenliste.py"
  },
- "sha256": "b374e505e0046d766269006669e416f3c4f96634843c1c2729a232341dce46bb",
+ "sha256": "50dd86c00b1d6d97629c42ae52257264a447998b42af5be6d831be6d56aedfdb",
  "unicode": "17.0.0"
 }

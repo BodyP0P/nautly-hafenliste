@@ -1,10 +1,10 @@
 {
  "datei": {
-  "byte": 4088531,
-  "byte_deflate6": 573331,
-  "byte_gzip9": 546169,
+  "byte": 4084304,
+  "byte_deflate6": 572611,
+  "byte_gzip9": 545465,
   "datei": "haefen-europa.geojson",
-  "sha256": "b374e505e0046d766269006669e416f3c4f96634843c1c2729a232341dce46bb"
+  "sha256": "50dd86c00b1d6d97629c42ae52257264a447998b42af5be6d831be6d56aedfdb"
  },
  "doppelt_im_eingang": 2072,
  "eingaenge": [
@@ -93,7 +93,7 @@
   "anker": true,
   "hafen": true
  },
- "geschrieben": 20872,
+ "geschrieben": 20862,
  "haeufigste_namen": {
   "anker": [
    [
@@ -105,55 +105,55 @@
     4
    ],
    [
-    "A1",
-    3
-   ],
-   [
-    "A2",
-    3
-   ],
-   [
-    "A3",
-    3
-   ],
-   [
-    "A4",
-    3
-   ],
-   [
-    "C1",
-    3
-   ],
-   [
-    "C2",
-    3
-   ],
-   [
-    "C3",
-    3
-   ],
-   [
     "Cala Blanca",
     3
    ],
    [
-    "A5",
+    "Cala Figuera",
     2
    ],
    [
-    "Ankerplads",
+    "Cala Mesquida",
     2
    ],
    [
-    "B1",
+    "Cala Mitjana",
     2
    ],
    [
-    "B2",
+    "Cala Roja",
     2
    ],
    [
-    "B3",
+    "Cala Torta",
+    2
+   ],
+   [
+    "Cala en Brut",
+    2
+   ],
+   [
+    "Cargo Transhipment",
+    2
+   ],
+   [
+    "Dalben",
+    2
+   ],
+   [
+    "Dregging",
+    2
+   ],
+   [
+    "Es Clot",
+    2
+   ],
+   [
+    "Gorredijk Passantenhaven",
+    2
+   ],
+   [
+    "Inner Anchorage",
     2
    ]
   ],
@@ -167,32 +167,12 @@
     10
    ],
    [
-    "Liegestelle Sport 24h",
-    10
-   ],
-   [
-    "Passantenhaven",
-    10
-   ],
-   [
     "Porto Vecchio",
     9
    ],
    [
     "Alter Hafen",
     8
-   ],
-   [
-    "Pienvenesatama",
-    8
-   ],
-   [
-    "Vierasvenesatama",
-    8
-   ],
-   [
-    "Przystań",
-    7
    ],
    [
     "Porto Canale",
@@ -211,11 +191,31 @@
     5
    ],
    [
-    "Лодочная станция",
-    5
+    "Bassin à flot",
+    4
    ],
    [
-    "Bassin à flot",
+    "Bureau du port",
+    4
+   ],
+   [
+    "Embarcadero",
+    4
+   ],
+   [
+    "Industriehafen",
+    4
+   ],
+   [
+    "Nieuwe Haven",
+    4
+   ],
+   [
+    "Port de Pêche",
+    4
+   ],
+   [
+    "Port de pêche",
     4
    ]
   ]
@@ -224,50 +224,50 @@
  "klassen": {
   "anker": {
    "als_namenlos": {
-    "nur Gattungswort": 38,
-    "nur Liegeplatznummer": 252,
+    "nur Gattungswort": 40,
+    "nur Liegeplatznummer": 346,
     "ohne Namen": 1629
    },
    "gelesen": 2890,
-   "geschrieben": 2327,
-   "geschrieben_benannt": 949,
-   "geschrieben_namenlos": 1378,
+   "geschrieben": 2330,
+   "geschrieben_benannt": 855,
+   "geschrieben_namenlos": 1475,
    "weg": {
-    "Dublette": 22,
+    "Dublette": 20,
     "Name zu lang": 0,
     "auf dem Rand der Gebiete": 0,
     "ausserhalb der Gebiete": 0,
     "keine Lage": 0,
-    "namenlos nahe anderem namenlosen": 203,
-    "namenlos nahe benanntem Eintrag": 338,
+    "namenlos nahe anderem namenlosen": 205,
+    "namenlos nahe benanntem Eintrag": 335,
     "verbotene Zeichen": 0
    }
   },
   "hafen": {
    "als_namenlos": {
-    "nur Gattungswort": 299,
-    "nur Liegeplatznummer": 2,
+    "nur Gattungswort": 351,
+    "nur Liegeplatznummer": 6,
     "ohne Namen": 5189
    },
    "gelesen": 20761,
-   "geschrieben": 18545,
-   "geschrieben_benannt": 14905,
-   "geschrieben_namenlos": 3640,
+   "geschrieben": 18532,
+   "geschrieben_benannt": 14853,
+   "geschrieben_namenlos": 3679,
    "weg": {
-    "Dublette": 360,
+    "Dublette": 356,
     "Name zu lang": 0,
     "auf dem Rand der Gebiete": 0,
     "ausserhalb der Gebiete": 0,
     "keine Lage": 0,
-    "namenlos nahe anderem namenlosen": 458,
-    "namenlos nahe benanntem Eintrag": 1392,
+    "namenlos nahe anderem namenlosen": 466,
+    "namenlos nahe benanntem Eintrag": 1401,
     "verbotene Zeichen": 6
    }
   }
  },
  "objekte_gelesen": 23651,
  "paare_unter_1000m_verschiedener_name": {
-  "anzahl": 12436,
+  "anzahl": 12317,
   "datei": "paare-unter-1000m.tsv"
  },
  "python_unicode": "17.0.0",
