@@ -30,6 +30,8 @@ EBENE = "haefen"
 MERKMALE = ("kind", "name", "osm_sz", "sz_name", "platz")
 ATTRIBUTION = "© OpenStreetMap contributors"
 NAME = "Hafenliste Europa (Nautly)"
+# Lizenz und Quelle in der Kacheldatei selbst (Metadaten "description"), wie license/attribution/source in der GeoJSON.
+BESCHREIBUNG = "ODbL-1.0 https://opendatacommons.org/licenses/odbl/1-0/ · https://github.com/BodyP0P/nautly-hafenliste"
 
 LIZENZ_TXT = """haefen-europa.geojson, haefen-europa.pmtiles -- Hafendaten / harbour data
 ========================================================================
@@ -80,7 +82,7 @@ def befehl(quelle, ziel):
          "--no-feature-limit", "--no-tile-size-limit"]
     for m in MERKMALE:
         b += ["-y", m]
-    return b + ["--attribution", ATTRIBUTION, "-n", NAME, quelle]
+    return b + ["--attribution", ATTRIBUTION, "-n", NAME, "-N", BESCHREIBUNG, quelle]
 
 
 def werkzeug_version():

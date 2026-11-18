@@ -23,7 +23,9 @@ class Befehl(unittest.TestCase):
             ["tippecanoe", "-q", "--force", "-o", "z.pmtiles", "-l", "haefen", "-Z0", "-z10", "-d14", "-r1",
              "--no-feature-limit", "--no-tile-size-limit",
              "-y", "kind", "-y", "name", "-y", "osm_sz", "-y", "sz_name", "-y", "platz",
-             "--attribution", "© OpenStreetMap contributors", "-n", "Hafenliste Europa (Nautly)", "q.geojson"],
+             "--attribution", "© OpenStreetMap contributors", "-n", "Hafenliste Europa (Nautly)",
+             "-N", "ODbL-1.0 https://opendatacommons.org/licenses/odbl/1-0/ · https://github.com/BodyP0P/nautly-hafenliste",
+             "q.geojson"],
             k.befehl("q.geojson", "z.pmtiles"))
 
     def test_osm_faellt_weg(self):
@@ -81,6 +83,13 @@ class EchterLauf(unittest.TestCase):
             with open(os.path.join(d, "HERKUNFT.json"), encoding="utf-8") as f:
                 self.assertEqual(p, json.load(f)["pmtiles"])
             self.assertTrue(p["werkzeug"].startswith("tippecanoe v"))
+            # Lizenz und Quelle in der Datei selbst (Noras L3): Metadaten nach dem PMTiles-v3-Kopf.
+            import gzip, struct
+            off, ln = struct.unpack("<QQ", b[24:40])
+            meta = json.loads(gzip.decompress(b[off:off + ln]))
+            self.assertIn("openstreetmap", meta["attribution"].lower())
+            self.assertIn("https://opendatacommons.org/licenses/odbl/1-0/", meta["description"])
+            self.assertIn("https://github.com/BodyP0P/nautly-hafenliste", meta["description"])
             with open(os.path.join(d, "LIZENZ.txt"), encoding="utf-8") as f:
                 self.assertEqual(k.LIZENZ_TXT, f.read())
             self.assertEqual(sorted(["HERKUNFT.json", "LIZENZ.txt", k.DATEI_GEOJSON, k.DATEI_PMTILES]), sorted(os.listdir(d)))

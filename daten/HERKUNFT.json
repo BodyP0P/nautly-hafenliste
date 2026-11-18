@@ -7,8 +7,8 @@
  "pmtiles": {
   "ausDatei": "haefen-europa.geojson",
   "ausSha256": "b374e505e0046d766269006669e416f3c4f96634843c1c2729a232341dce46bb",
-  "befehl": "tippecanoe -q --force -o haefen-europa.pmtiles -l haefen -Z0 -z10 -d14 -r1 --no-feature-limit --no-tile-size-limit -y kind -y name -y osm_sz -y sz_name -y platz --attribution © OpenStreetMap contributors -n Hafenliste Europa (Nautly) haefen-europa.geojson",
-  "byte": 4614451,
+  "befehl": "tippecanoe -q --force -o haefen-europa.pmtiles -l haefen -Z0 -z10 -d14 -r1 --no-feature-limit --no-tile-size-limit -y kind -y name -y osm_sz -y sz_name -y platz --attribution © OpenStreetMap contributors -n Hafenliste Europa (Nautly) -N ODbL-1.0 https://opendatacommons.org/licenses/odbl/1-0/ · https://github.com/BodyP0P/nautly-hafenliste haefen-europa.geojson",
+  "byte": 4614532,
   "datei": "haefen-europa.pmtiles",
   "ebene": "haefen",
   "merkmale": [
@@ -18,9 +18,9 @@
    "sz_name",
    "platz"
   ],
-  "sha256": "a6acdcf9efc32dd39845601525c5bb1e8bad78505d7f7ec8e6b97e3c42000fb9",
+  "sha256": "99d5dd8be23af96e37eb498683f4002d054ab35f058e3febcd7562c5c67ba37f",
   "skript": "skript/kacheln.py",
-  "skriptSha256": "a6cf02ebb2cd5f0ceaa397e3f289808b8f22aa59ace88a6429f1536ca10385a1",
+  "skriptSha256": "bdf2c19e4163aa2f8675c6a58d4f2f40eb3926955131638986c57ee009ecb4f6",
   "werkzeug": "tippecanoe v2.79.0",
   "zoom": [
    0,
