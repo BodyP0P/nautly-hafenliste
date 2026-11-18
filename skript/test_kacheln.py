@@ -97,7 +97,7 @@ class EchterLauf(unittest.TestCase):
 
 
 
-# Ohne Dekorator-Zeichen geschrieben: Die Pruefung vor jedem Push sucht im Repo nach "@" (Adressen).
+# Ohne Dekorator geschrieben: Die Pruefung vor jedem Push sucht im Repo nach dem Zeichen von Mail-Adressen.
 EchterLauf = unittest.skipUnless(shutil.which("tippecanoe"), "tippecanoe nicht installiert")(EchterLauf)
 
 if __name__ == "__main__":
