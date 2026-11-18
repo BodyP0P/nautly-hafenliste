@@ -18,7 +18,8 @@ Regeln (die Werte stehen als Konstanten unten):
   Name        `name`, nur wenn leer `seamark:name`; NFC, aussen getrimmt. Namen mit + oder ; und
               Namen ueber 255 Byte fallen weg. Ein Klammerzusatz faellt nur nach KLAMMER_WEG weg.
               Ein Name, der nur ein Gattungswort ist ("Marina", "Luka", "Småbåtshamn"), oder nur eine
-              Liegeplatznummer (nur Ziffern oder ein einzelner Buchstabe), gilt als namenlos.
+              Liegeplatznummer (nur Ziffern, ein einzelner Buchstabe oder ein Liegeplatzcode aus einem
+              Grossbuchstaben und ein oder zwei Ziffern wie "A1"), gilt als namenlos.
   Gebiete     Ein Eintrag bleibt nur, wenn er echt innerhalb eines Rechtecks liegt (nicht auf dem
               Rand), gemessen an der gerundeten Lage, die die App sieht. So zeigt die App genau
               die Eintraege, die ihr Filter `within` den Kartenkacheln wegnimmt.
@@ -42,6 +43,7 @@ Nur Standardbibliothek. Laeuft mit Python 3.9 und neuer.
 import gzip
 import hashlib
 import json
+import re
 import math
 import os
 import sys
@@ -85,7 +87,12 @@ GATTUNG_ALLEIN = ("marina", "hafen", "yachthafen", "jachthafen", "sportboothafen
 # Nautly-Ergaenzung zu R0 (Oscar 17.11.2026 nach Doras D-1): haeufige Gattungsnamen in den Daten
 GATTUNG_ALLEIN_NAUTLY = ("småbåtshamn", "småbåtshavn", "gästhamn", "venesatama", "port de plaisance",
                          "capitainerie", "ausstiegsstelle")
-GATTUNG_ALLEIN = GATTUNG_ALLEIN + GATTUNG_ALLEIN_NAUTLY
+# Nautly-Ergaenzung (Doras Sichtabnahme B3, 18.11.2026, Gruende R1, Entscheid Oscar 18.11.): Das Zeichen sagt es schon.
+# Unterscheidende (R2: Alter Hafen, Porto Vecchio, Winterhafen) und warnende Namen (R3: Ölhafen, Kalasatama,
+# Przystań kajakowa, Réservé) bleiben benannt; die Regel gilt nur fuer den ganzen Namen.
+GATTUNG_ALLEIN_B3 = ("przystań", "passantenhaven", "liegestelle sport 24h", "vierasvenesatama", "pienvenesatama",
+                     "лодочная станция", "ankerplads")
+GATTUNG_ALLEIN = GATTUNG_ALLEIN + GATTUNG_ALLEIN_NAUTLY + GATTUNG_ALLEIN_B3
 
 LIZENZ_KURZ = "ODbL-1.0 https://opendatacommons.org/licenses/odbl/1-0/"
 ATTRIBUTION = "© OpenStreetMap contributors https://www.openstreetmap.org/copyright"
@@ -255,9 +262,12 @@ def klammer_weg(name):
     return name
 
 
+LIEGEPLATZCODE = re.compile(r"^[A-Z][0-9]{1,2}$")  # Doras R4, Oscar 17.11. (3) und 18.11.: "A1" bis "C3"
+
+
 def ist_liegeplatznummer(name):
-    """Nur Ziffern 0-9 oder ein einzelner Buchstabe ("12", "A")."""
-    return (name.isascii() and name.isdigit()) or (len(name) == 1 and name.isalpha())
+    """Nur Ziffern 0-9, ein einzelner Buchstabe ("12", "A") oder ein Liegeplatzcode ("A1", "C12")."""
+    return (name.isascii() and name.isdigit()) or (len(name) == 1 and name.isalpha()) or bool(LIEGEPLATZCODE.match(name))
 
 
 def platz(osm_sz, sz_name_text, hat_name):

@@ -121,9 +121,28 @@ class EinzelobjektTest(unittest.TestCase):
             e, _ = h.pruefe("node", 1, {"seamark:type": "anchor_berth", "name": n}, (45, 15))
             self.assertIsNone(e["name"], n)
             self.assertEqual(e["namenlos_grund"], "nur Liegeplatznummer", n)
-        for n in ("A1", "12a", "Box 42", "Ab", "١٢"):
+        for n in ("12a", "Box 42", "Ab", "١٢", "a1", "A123", "AB1"):
             e, _ = h.pruefe("node", 1, {"seamark:type": "anchor_berth", "name": n}, (45, 15))
             self.assertEqual(e["name"], n, n)
+
+    def test_liegeplatzcode_wird_namenlos(self):
+        """Doras R4 (Sichtabnahme B3), Oscar 18.11.: ein Grossbuchstabe und ein oder zwei Ziffern."""
+        for n in ("A1", "A5", "B3", "C3", "C12"):
+            e, _ = h.pruefe("node", 1, {"seamark:type": "anchor_berth", "name": n}, (45, 15))
+            self.assertIsNone(e["name"], n)
+            self.assertEqual(e["namenlos_grund"], "nur Liegeplatznummer", n)
+
+    def test_gattungsnamen_b3_werden_namenlos_unterscheidende_und_warnende_bleiben(self):
+        """Doras Sichtabnahme B3 (R1 namenlos; R2 und R3 bleiben benannt), Oscar 18.11."""
+        for n in ("Przystań", "Passantenhaven", "Liegestelle Sport 24h", "Vierasvenesatama", "Pienvenesatama",
+                  "Лодочная станция", "Ankerplads"):
+            e, grund = h.pruefe("node", 1, {"leisure": "marina", "name": n}, (45, 15))
+            self.assertIsNone(grund, n)
+            self.assertIsNone(e["name"], n)
+            self.assertEqual(e["namenlos_grund"], "nur Gattungswort", n)
+        for n in ("Przystań kajakowa", "Kalasatama", "Porto Canale", "Winterhafen", "Ölhafen", "Bassin à flot",
+                  "Porto Vecchio", "Alter Hafen", "Porto Nuovo", "Ausstiegsstelle nur für Kanuten", "Réservé"):
+            self.assertEqual(h.pruefe("node", 1, {"leisure": "marina", "name": n}, (45, 15))[0]["name"], n, n)
 
     def test_namenlos_mit_seezeichen_platz_1(self):
         e, _ = h.pruefe("node", 1, {"leisure": "marina", "name": "Marina",
