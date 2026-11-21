@@ -21,9 +21,9 @@ Ausgang:  im Zielordner
           Zwischendateien (gefilterte Auszuege, Export) liegen im Arbeitsordner, nicht im Repo.
 
 Regeln:
-  Auswahl     nur Objekte mit dem Merkmal `seamark:light:character` (nicht leer). Objekte, die ihre Lichter nur
-              nummeriert tragen (`seamark:light:1:character` ...), zaehlt das Lauf-Log getrennt, sie kommen nicht in die
-              Datei.
+  Auswahl     Objekte mit dem Merkmal `seamark:light:character` oder einem nummerierten `seamark:light:<n>:character`
+              (Sektorenfeuer; Oscars Nachtrag zum Kriterium B4, 21.11.2026, F-B4-2), je nicht leer. Das Lauf-Log
+              zaehlt die nur nummerierten getrennt, damit die Zahl mit und ohne sie feststeht.
   Gebiete     wie skript/hafenliste.py: echt innerhalb eines Rechtecks aus rezept/gebiete.json (nicht auf dem Rand),
               gemessen an der gerundeten Lage.
   Lage        Knoten: seine Koordinate. Weg und Flaeche: Mitte des umschliessenden Rechtecks der Geometrie.
@@ -287,9 +287,12 @@ def kennung_sektoren(alle):
 
 
 def kennung(tags):
-    """Die Zeilen, die OpenSeaMap neben das Feuer schreibt (eine bei einem einzelnen Licht)."""
+    """Die Zeilen, die OpenSeaMap neben das Feuer schreibt (eine bei einem einzelnen Licht).
+
+    seachart nimmt den Sektorenzweig, wenn es ein Licht Nummer 1 gibt. Faengt die Nummerierung erst spaeter an, gilt hier
+    trotzdem der Sektorenzweig: Sonst entstuende aus dem leeren Licht 0 eine leere Kennung (technischer Entscheid Kai)."""
     alle = lichter(tags)
-    if 1 in alle:
+    if any(n >= 1 for n in alle):
         return kennung_sektoren(alle)
     return [kennung_einzeln(alle.get(0, {}))]
 
@@ -358,11 +361,26 @@ def gebiete_von(lat, lon, gebiete):
 RANG = {"node": 0, "way": 1, "relation": 2}
 
 
+# Pruefnamen (Doras Prueforte B4): Treffer stehen im Lauf-Log mit OSM-Objekt, Schluesselart und Klasse.
+PRUEFNAMEN = ("Ostri Rat",)
+
+
+def nummerierte_kennung(tags):
+    """True, wenn das Objekt eine nicht leere nummerierte Kennung traegt (`seamark:light:<n>:character`)."""
+    for k, v in tags.items():
+        rest = k[len("seamark:light:"):].split(":") if k.startswith("seamark:light:") else []
+        if len(rest) == 2 and rest[0].isdigit() and rest[1] == "character" and (v or "").strip():
+            return True
+    return False
+
+
 def neues_log(gebiete):
     return {"zeilen": 0, "ohne_kennung_im_export": 0, "doppelt_im_eingang": 0, "ohne_merkmal": 0,
-            "nur_nummerierte_lichter": 0, "ohne_lage": 0, "ausserhalb": 0, "auf_dem_rand": 0, "geschrieben": 0,
+            "ohne_lage": 0, "ausserhalb": 0, "auf_dem_rand": 0, "geschrieben": 0,
+            "geschrieben_mit_merkmal": 0, "geschrieben_nur_nummeriert": 0,
             "je_klasse": {"kurz": 0, "lang": 0}, "je_gebiet": {g["id"]: 0 for g in gebiete},
-            "sektorenfeuer": 0, "laengen": {}}
+            "je_gebiet_nur_nummeriert": {g["id"]: 0 for g in gebiete},
+            "sektorenfeuer": 0, "laengen": {}, "pruefnamen": []}
 
 
 def erzeuge(features, gebiete, log=None):
@@ -381,11 +399,9 @@ def erzeuge(features, gebiete, log=None):
             log["doppelt_im_eingang"] += 1
             continue
         gesehen.add((typ, oid))
-        if not (tags.get(MERKMAL) or "").strip():
+        mit_merkmal = bool((tags.get(MERKMAL) or "").strip())
+        if not mit_merkmal and not nummerierte_kennung(tags):
             log["ohne_merkmal"] += 1
-            if any(k.startswith("seamark:light:") and k.endswith(":character") and k != MERKMAL and v.strip()
-                   for k, v in tags.items()):
-                log["nur_nummerierte_lichter"] += 1
             continue
         l = lage(geom)
         if l is None:
@@ -406,6 +422,13 @@ def erzeuge(features, gebiete, log=None):
         log["je_klasse"]["kurz" if k == KLASSE_KURZ else "lang"] += 1
         for g in drin:
             log["je_gebiet"][g] += 1
+            if not mit_merkmal:
+                log["je_gebiet_nur_nummeriert"][g] += 1
+        log["geschrieben_mit_merkmal" if mit_merkmal else "geschrieben_nur_nummeriert"] += 1
+        name = tags.get("seamark:name") or tags.get("name") or ""
+        if any(n in name for n in PRUEFNAMEN):
+            log["pruefnamen"].append({"osm": "%s/%d" % (typ, oid), "name": name, "klasse": k, "zeilen": zeilen,
+                                      "schluessel": "seamark:light:character" if mit_merkmal else "nur nummeriert"})
         punkte.append({"typ": typ, "id": oid, "lat": lat, "lon": lon, "klasse": k})
     punkte.sort(key=lambda p: (RANG[p["typ"]], p["id"]))
     log["geschrieben"] = len(punkte)
@@ -418,7 +441,8 @@ def geht_auf(log):
     weg = sum(log[k] for k in ("ohne_kennung_im_export", "doppelt_im_eingang", "ohne_merkmal", "ohne_lage",
                                "ausserhalb", "auf_dem_rand"))
     return {"zeilen": weg + log["geschrieben"] == log["zeilen"],
-            "klassen": sum(log["je_klasse"].values()) == log["geschrieben"]}
+            "klassen": sum(log["je_klasse"].values()) == log["geschrieben"],
+            "schluessel": log["geschrieben_mit_merkmal"] + log["geschrieben_nur_nummeriert"] == log["geschrieben"]}
 
 
 def geojson_bytes(punkte):
@@ -550,6 +574,7 @@ def baue(arbeit, ziel, auszuege, gebiete_pfad=None):
         "repoCommit": None,
         "repoCommitHinweis": "Wird beim Uebernehmen in die App gesetzt; im Repo zeigt der Commit dieser Datei den Stand.",
         "quelle": {"geofabrik": GEOFABRIK, "auszuege": eingaenge, "filter": FILTER, "merkmal": MERKMAL,
+                   "auchNummeriert": "seamark:light:<n>:character",
                    "werkzeug": werkzeug_version("osmium")},
         "osmStand": min(e["osmStand"] for e in eingaenge),
         "osmStandHinweis": "der aelteste Stand ueber alle Auszuege",
@@ -563,6 +588,8 @@ def baue(arbeit, ziel, auszuege, gebiete_pfad=None):
         "punkte": len(punkte),
         "punkteJeKlasse": log["je_klasse"],
         "punkteJeGebiet": log["je_gebiet"],
+        "punkteMitMerkmal": log["geschrieben_mit_merkmal"],
+        "punkteNurNummeriert": log["geschrieben_nur_nummeriert"],
         "pmtiles": {"datei": DATEI_PMTILES, "byte": os.path.getsize(pm), "sha256": sha256_datei(pm),
                     "ausDatei": DATEI, "ausSha256": hashlib.sha256(gj).hexdigest(), "ebene": EBENE,
                     "zoom": [ZOOM, ZOOM], "merkmale": ["klasse"], "werkzeug": werkzeug_version("tippecanoe"),
@@ -576,11 +603,14 @@ def baue(arbeit, ziel, auszuege, gebiete_pfad=None):
 
 
 def zusammenfassung(herkunft, lauf_log):
-    z = ["zeilen %d, doppelt %d, ohne %s %d (davon nur nummerierte Lichter %d), ohne Lage %d, ausserhalb %d, Rand %d" % (
-        lauf_log["zeilen"], lauf_log["doppelt_im_eingang"], MERKMAL, lauf_log["ohne_merkmal"],
-        lauf_log["nur_nummerierte_lichter"], lauf_log["ohne_lage"], lauf_log["ausserhalb"], lauf_log["auf_dem_rand"])]
-    z.append("geschrieben %d: kurz %d, lang %d (Sektorenfeuer %d)" % (
-        lauf_log["geschrieben"], lauf_log["je_klasse"]["kurz"], lauf_log["je_klasse"]["lang"], lauf_log["sektorenfeuer"]))
+    z = ["zeilen %d, doppelt %d, ohne Kennung %d, ohne Lage %d, ausserhalb %d, Rand %d" % (
+        lauf_log["zeilen"], lauf_log["doppelt_im_eingang"], lauf_log["ohne_merkmal"], lauf_log["ohne_lage"],
+        lauf_log["ausserhalb"], lauf_log["auf_dem_rand"])]
+    z.append("geschrieben %d: kurz %d, lang %d (Sektorenfeuer %d; mit %s %d, nur nummeriert %d)" % (
+        lauf_log["geschrieben"], lauf_log["je_klasse"]["kurz"], lauf_log["je_klasse"]["lang"], lauf_log["sektorenfeuer"],
+        MERKMAL, lauf_log["geschrieben_mit_merkmal"], lauf_log["geschrieben_nur_nummeriert"]))
+    z.append("nur nummeriert je Gebiet %s" % json.dumps(lauf_log["je_gebiet_nur_nummeriert"]))
+    z.append("pruefnamen %s" % json.dumps(lauf_log["pruefnamen"], ensure_ascii=False))
     for g, n in lauf_log["je_gebiet"].items():
         z.append("  %-15s %7d" % (g, n))
     z.append("laengen %s" % json.dumps(lauf_log["laengen"]))

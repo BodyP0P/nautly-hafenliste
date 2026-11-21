@@ -118,16 +118,33 @@ def merkmal(fid, tags, lon, lat):
 
 class Erzeugen(unittest.TestCase):
 
-    def test_nur_mit_seamark_light_character(self):
+    def test_mit_kennung_auch_nur_nummeriert(self):
+        """Oscars Nachtrag F-B4-2: Sektorenfeuer mit nur nummerierten Schluesseln gehoeren dazu, getrennt gezaehlt."""
         punkte, log = f.erzeuge([
             merkmal("n1", licht(character="Fl", colour="red", period="4"), 15.2, 44.1),
-            merkmal("n2", sektoren({"colour": "white"}, character="Fl"), 15.3, 44.1),
+            merkmal("n2", sektoren({"colour": "white", "range": "9"}, {"colour": "red", "range": "6"},
+                                   character="Fl", period="4", height="10"), 15.3, 44.1),
             merkmal("n3", {"seamark:light:colour": "red"}, 15.4, 44.1),
+            merkmal("n4", {"seamark:light:1:colour": "red", "seamark:light:1:character": " "}, 15.5, 44.1),
         ], GEBIETE)
-        self.assertEqual([1], [p["id"] for p in punkte])
+        self.assertEqual([1, 2], [p["id"] for p in punkte])
+        self.assertEqual([f.KLASSE_KURZ, f.KLASSE_LANG], [p["klasse"] for p in punkte])   # "Fl.WR.4s10m9/6M"
         self.assertEqual(2, log["ohne_merkmal"])
-        self.assertEqual(1, log["nur_nummerierte_lichter"])
+        self.assertEqual(1, log["geschrieben_mit_merkmal"])
+        self.assertEqual(1, log["geschrieben_nur_nummeriert"])
+        self.assertEqual({"adria": 1, "ostmed": 0}, log["je_gebiet_nur_nummeriert"])
         self.assertTrue(all(f.geht_auf(log).values()))
+
+    def test_nummerierung_ab_zwei_nimmt_sektorenzweig(self):
+        t = {"seamark:light:2:character": "Fl", "seamark:light:2:colour": "green", "seamark:light:2:period": "4"}
+        self.assertEqual(["Fl.G.4s"], f.kennung(t))
+
+    def test_pruefnamen_im_log(self):
+        tags = dict(sektoren({"colour": "white", "range": "15"}, character="Fl", group="3", period="10"),
+                    **{"seamark:name": "Ostri Rat"})
+        _, log = f.erzeuge([merkmal("n9", tags, 15.2, 44.1)], GEBIETE)
+        self.assertEqual([{"osm": "node/9", "name": "Ostri Rat", "klasse": f.KLASSE_LANG, "zeilen": ["Fl(3)W.10s15M"],
+                           "schluessel": "nur nummeriert"}], log["pruefnamen"])
 
     def test_gebiete_innen_rand_aussen_und_je_gebiet(self):
         punkte, log = f.erzeuge([
@@ -261,10 +278,10 @@ class EchterLauf(unittest.TestCase):
                             "--output-header=osmosis_replication_timestamp=2026-11-20T21:21:00Z"], check=True)
             ziel = os.path.join(d, "daten")
             herkunft, log = f.baue(os.path.join(d, "arbeit"), ziel, [pbf])
-            self.assertEqual(2, herkunft["punkte"])
-            self.assertEqual({"kurz": 1, "lang": 1}, herkunft["punkteJeKlasse"])
+            self.assertEqual(3, herkunft["punkte"])
+            self.assertEqual({"kurz": 2, "lang": 1}, herkunft["punkteJeKlasse"])
+            self.assertEqual(1, herkunft["punkteNurNummeriert"])
             self.assertEqual("2026-11-20T21:21:00Z", herkunft["osmStand"])
-            self.assertEqual(1, log["nur_nummerierte_lichter"])
             self.assertEqual(1, log["ausserhalb"])
             self.assertEqual(sorted([f.DATEI, f.DATEI_PMTILES, f.DATEI_HERKUNFT, f.DATEI_LOG, "LIZENZ.txt"]),
                              sorted(os.listdir(ziel)))
