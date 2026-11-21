@@ -39,6 +39,16 @@ python3 -I -m unittest discover -s skript            # Tests
 
 Nur Python-Standardbibliothek, Python 3.9 oder neuer, für die Kacheln dazu [tippecanoe](https://github.com/felt/tippecanoe) (Version in `HERKUNFT.json`). Zwei Läufe über dieselben Antworten ergeben dieselbe GeoJSON-Datei, Byte für Byte. Die Kacheln sind im Inhalt gleich, nicht in jedem Byte (tippecanoe ordnet die Punkte innerhalb einer Kachel je Lauf anders); darum liegt die Kacheldatei selbst hier.
 
+### Feuer
+
+`feuer-europa.geojson` und `feuer-europa.pmtiles` (Ebene `feuer`, nur Zoom 10) enthalten die Lage der Leuchtfeuer mit Kennung (`seamark:light:character`) in denselben Gebieten. Jeder Punkt trägt nur `klasse`: 1, wenn die Kennung, wie OpenSeaMap sie neben das Feuer schreibt, höchstens 10 Zeichen hat („Fl.G.4s“), sonst 2 („Fl(2)R.4s2M“). Die Kennung selbst steht nicht in der Datei. Die App legt dort eine unsichtbare Fläche hin, damit ihre eigene Schrift die Kennung nicht überdeckt. `HERKUNFT-feuer.json` nennt die Auszüge, ihren OSM-Stand, die Befehle, die Zahlen je Gebiet und die Prüfsummen, `feuer-lauf-log.json` was gelesen, weggelassen und geschrieben wurde.
+
+Quelle sind OSM-Auszüge von [Geofabrik](https://download.geofabrik.de/), gefiltert mit [osmium](https://osmcode.org/osmium-tool/). Das Skript fragt keinen Server an.
+
+```
+python3 -I skript/feuer.py <arbeitsordner> daten <auszug.osm.pbf> [<auszug.osm.pbf> ...]
+```
+
 Die Daten sind unvollständig und ungeprüft und werden ohne Gewähr bereitgestellt. Nicht zur Navigation verwenden.
 
 ## English
@@ -70,5 +80,11 @@ This harbour list is a derived database of OpenStreetMap and is licensed under t
 - An entry remains only if it lies strictly inside an area, not on its edge.
 
 **Generate:** see the commands above. Python standard library only, Python 3.9 or newer, plus [tippecanoe](https://github.com/felt/tippecanoe) for the tiles (version in `HERKUNFT.json`). Two runs over the same responses give the same GeoJSON file, byte for byte. The tiles are equal in content, not in every byte (tippecanoe orders the points within a tile differently on each run); that is why the tile file itself is kept here.
+
+### Lights
+
+`feuer-europa.geojson` and `feuer-europa.pmtiles` (layer `feuer`, zoom 10 only) hold the position of the lights with a characteristic (`seamark:light:character`) in the same areas. Each point carries only `klasse`: 1 if the characteristic, as OpenSeaMap writes it next to the light, has at most 10 characters ("Fl.G.4s"), otherwise 2 ("Fl(2)R.4s2M"). The characteristic itself is not in the file. The app places an invisible area there so that its own labels do not cover the characteristic. `HERKUNFT-feuer.json` gives the extracts, their OSM snapshot, the commands, the numbers per area and the checksums, `feuer-lauf-log.json` what was read, left out and written.
+
+The source is OSM extracts from [Geofabrik](https://download.geofabrik.de/), filtered with [osmium](https://osmcode.org/osmium-tool/). The script does not query any server. Command: see above.
 
 The data is incomplete and unverified and is provided as is. Do not use for navigation.
