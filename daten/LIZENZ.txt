@@ -1,11 +1,17 @@
 haefen-europa.geojson, haefen-europa.pmtiles -- Hafendaten / harbour data
+feuer-europa.geojson, feuer-europa.pmtiles   -- Feuerdaten / light data
 ========================================================================
 
 DE
-Diese Dateien enthalten Haefen, Marinas und Ankerplaetze an den Kuesten und
+haefen-europa.* enthalten Haefen, Marinas und Ankerplaetze an den Kuesten und
 Seen Europas, abgeleitet aus OpenStreetMap. Die Daten wurden gefiltert, in
 den Namen bereinigt und entdoppelt. haefen-europa.pmtiles enthaelt dieselben
 Punkte als Vektorkacheln (PMTiles), so wie die App Nautly sie zeichnet.
+
+feuer-europa.* enthalten die Lage der Leuchtfeuer mit Kennung in denselben
+Gebieten, abgeleitet aus OpenStreetMap, je Feuer nur die Lage und ob die
+Kennung kurz oder lang ist. feuer-europa.pmtiles enthaelt dieselben Punkte
+als Vektorkacheln (PMTiles).
 
 Sie sind damit eine abgeleitete Datenbank im Sinne der Open Database License
 (ODbL) 1.0 und stehen unter denselben Lizenzbedingungen.
@@ -15,16 +21,22 @@ Sie sind damit eine abgeleitete Datenbank im Sinne der Open Database License
                https://www.openstreetmap.org/copyright
   Dateien, Skript und Abfragen: https://github.com/BodyP0P/nautly-hafenliste
 
-  OSM-Stand, Commit und Pruefsummen: siehe HERKUNFT.json in diesem Ordner
+  OSM-Stand, Commit und Pruefsummen: siehe HERKUNFT.json und
+  HERKUNFT-feuer.json in diesem Ordner
 
   Die Daten sind unvollstaendig und ungeprueft und werden ohne Gewaehr
   bereitgestellt. Nicht zur Navigation verwenden.
 
 EN
-These files contain harbours, marinas and anchorages on the coasts and
+haefen-europa.* contain harbours, marinas and anchorages on the coasts and
 lakes of Europe, derived from OpenStreetMap. The data has been filtered,
 cleaned up in the names and de-duplicated. haefen-europa.pmtiles holds the
 same points as vector tiles (PMTiles), as drawn by the Nautly app.
+
+feuer-europa.* contain the position of lights with a characteristic in the
+same areas, derived from OpenStreetMap, for each light only its position and
+whether the characteristic is short or long. feuer-europa.pmtiles holds the
+same points as vector tiles (PMTiles).
 
 They are therefore a derivative database under the Open Database License
 (ODbL) 1.0 and are made available under the same terms.
@@ -34,7 +46,8 @@ They are therefore a derivative database under the Open Database License
                https://www.openstreetmap.org/copyright
   Files, script and queries: https://github.com/BodyP0P/nautly-hafenliste
 
-  OSM snapshot, commit and checksums: see HERKUNFT.json in this folder
+  OSM snapshot, commit and checksums: see HERKUNFT.json and
+  HERKUNFT-feuer.json in this folder
 
   The data is incomplete and unverified and is provided as is.
   Do not use for navigation.

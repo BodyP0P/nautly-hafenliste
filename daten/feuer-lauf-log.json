@@ -1,0 +1,793 @@
+{
+ "auf_dem_rand": 0,
+ "ausserhalb": 811,
+ "doppelt_im_eingang": 1841,
+ "eingaenge": [
+  {
+   "byte": 54579155,
+   "datei": "albania-latest.osm.pbf",
+   "export": {
+    "byte": 15476,
+    "datei": "albania-latest.feuer.geojsonseq",
+    "sha256": "ddcdf91be4cadc60451000492e18211e0a2e4a319418f882ba427fe761d0fff6"
+   },
+   "md5Geofabrik": "0d42f2749e035eb329836766c24bd35b",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 301927112,
+   "datei": "algeria-latest.osm.pbf",
+   "export": {
+    "byte": 46593,
+    "datei": "algeria-latest.feuer.geojsonseq",
+    "sha256": "1e71ffa4237feafd9feaed20fd6a3bcd9c692bef7d423de682225a907a9388ee"
+   },
+   "md5Geofabrik": "ed92c926f6a4fe36ea020f9c15d1b1a4",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 3505278,
+   "datei": "andorra-latest.osm.pbf",
+   "export": {
+    "byte": 1,
+    "datei": "andorra-latest.feuer.geojsonseq",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+   },
+   "md5Geofabrik": "2a1c7b3c9b55569029dd9fd9c707acbd",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 816091614,
+   "datei": "austria-latest.osm.pbf",
+   "export": {
+    "byte": 97519,
+    "datei": "austria-latest.feuer.geojsonseq",
+    "sha256": "95595cefe527727355d399e4383fee55d5a6abc2ba88b4755123481588b53308"
+   },
+   "md5Geofabrik": "74876396345268a2148d62718046955c",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 17981881,
+   "datei": "azores-latest.osm.pbf",
+   "export": {
+    "byte": 50116,
+    "datei": "azores-latest.feuer.geojsonseq",
+    "sha256": "af5440009c3ccd9663e2ffb22b95df5426a170ac7637e2b860fd891081b9a016"
+   },
+   "md5Geofabrik": "6cd0537414ab82d5d6b23a9484f9f1a7",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 352479888,
+   "datei": "belarus-latest.osm.pbf",
+   "export": {
+    "byte": 1,
+    "datei": "belarus-latest.feuer.geojsonseq",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+   },
+   "md5Geofabrik": "08e22126a71faff39d6c3aeb8c07eb97",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 699726465,
+   "datei": "belgium-latest.osm.pbf",
+   "export": {
+    "byte": 335715,
+    "datei": "belgium-latest.feuer.geojsonseq",
+    "sha256": "23c69bbf5d980dd529fb43485bbf66c2cc76cd3bc056092026620139c25ae403"
+   },
+   "md5Geofabrik": "57f6fd8827d0625c9b52eb583872dfee",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 162483350,
+   "datei": "bosnia-herzegovina-latest.osm.pbf",
+   "export": {
+    "byte": 1737,
+    "datei": "bosnia-herzegovina-latest.feuer.geojsonseq",
+    "sha256": "7a1016360a514d628d64b0c68d8673bc07a190ddc6cb5a7a428263a118a69e98"
+   },
+   "md5Geofabrik": "b173282eb7e358f50bc9598a80c4f335",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 178076210,
+   "datei": "bulgaria-latest.osm.pbf",
+   "export": {
+    "byte": 25027,
+    "datei": "bulgaria-latest.feuer.geojsonseq",
+    "sha256": "7495c6ce3e270d9cb2e382385bf4382d6d1f0bc8b05d134c29bacc128f927039"
+   },
+   "md5Geofabrik": "6ad064c6b39446c08491bf04efaea3bf",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 60634233,
+   "datei": "canary-islands-latest.osm.pbf",
+   "export": {
+    "byte": 98084,
+    "datei": "canary-islands-latest.feuer.geojsonseq",
+    "sha256": "7332675a66a8bcbc13a03d478ccb4cd3491c5d9b779cc91cb74546d12afba9e7"
+   },
+   "md5Geofabrik": "24d50e3a5bcbe0cb8c0b038ac8e09be0",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 886605205,
+   "datei": "central-fed-district-latest.osm.pbf",
+   "export": {
+    "byte": 255,
+    "datei": "central-fed-district-latest.feuer.geojsonseq",
+    "sha256": "f4d289d1839d32abb2d2c3aadee652519f2a15375f9756427b2e37e3722712cb"
+   },
+   "md5Geofabrik": "aa0b8bc96ed0d007c90a2f1da3caf2c4",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 40805964,
+   "datei": "crimean-fed-district-latest.osm.pbf",
+   "export": {
+    "byte": 33539,
+    "datei": "crimean-fed-district-latest.feuer.geojsonseq",
+    "sha256": "8227d1af63890a8f76311f77fd5fe610418b5b13d2c4b8ab88dcdcde83b2d1ad"
+   },
+   "md5Geofabrik": "59e77366edccf1950fda7bb21eaac610",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 202069771,
+   "datei": "croatia-latest.osm.pbf",
+   "export": {
+    "byte": 460122,
+    "datei": "croatia-latest.feuer.geojsonseq",
+    "sha256": "1764d55bb15054d2f2a3214714cb45d76209a938e59eff92c29584bb5d3bc6ab"
+   },
+   "md5Geofabrik": "df63c878f9215317a46f1fe0fe631d87",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 37934724,
+   "datei": "cyprus-latest.osm.pbf",
+   "export": {
+    "byte": 90799,
+    "datei": "cyprus-latest.feuer.geojsonseq",
+    "sha256": "d68566e877df413281c20580fc9f828eef4d1498f634aa25d96119f594e2a567"
+   },
+   "md5Geofabrik": "14774c2b44d539ebb2e71d9a79c83e55",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 953797132,
+   "datei": "czech-republic-latest.osm.pbf",
+   "export": {
+    "byte": 846,
+    "datei": "czech-republic-latest.feuer.geojsonseq",
+    "sha256": "0fa6232c68c56d38ba4669a478d49b67a464d4e1fbacbaab69fb483d667171ed"
+   },
+   "md5Geofabrik": "1ab0c55cdc64a78eb45ff5aafe3f5f60",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 498305924,
+   "datei": "denmark-latest.osm.pbf",
+   "export": {
+    "byte": 1361029,
+    "datei": "denmark-latest.feuer.geojsonseq",
+    "sha256": "490594ca56ab0e0b7d36a254d52a037cff63919b62eef1c44d4c3e4952e41807"
+   },
+   "md5Geofabrik": "c3a6d7ffc647777403785fb208817254",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 124751615,
+   "datei": "estonia-latest.osm.pbf",
+   "export": {
+    "byte": 248346,
+    "datei": "estonia-latest.feuer.geojsonseq",
+    "sha256": "3ec2577c23f2985cfc84ef43a281059cb0332f6ba7a3ccd4f2cdda205ef2de2d"
+   },
+   "md5Geofabrik": "d183c71d6db0fc8952b3d12f1cd57166",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 7742752,
+   "datei": "faroe-islands-latest.osm.pbf",
+   "export": {
+    "byte": 46337,
+    "datei": "faroe-islands-latest.feuer.geojsonseq",
+    "sha256": "03c9fb0d2d200304ba217843be17ae09b63e75b4e764314578b3d4026300de45"
+   },
+   "md5Geofabrik": "cc63939f1d6110bb7df18f539a9e59ec",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 778245655,
+   "datei": "finland-latest.osm.pbf",
+   "export": {
+    "byte": 2329949,
+    "datei": "finland-latest.feuer.geojsonseq",
+    "sha256": "d553d3fca8763e13893e85e38b8e1feceeab753d98c0eaaecd0a84e1a542b38d"
+   },
+   "md5Geofabrik": "363ebbe6e01cab9982ffc4254dfdf74f",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 5119838718,
+   "datei": "france-latest.osm.pbf",
+   "export": {
+    "byte": 1504281,
+    "datei": "france-latest.feuer.geojsonseq",
+    "sha256": "757d8c211f7100cf54ecc026e7e6e6ffabbac1f82f11f942587c94c876cbf447"
+   },
+   "md5Geofabrik": "2285382fd1afbbffcc012f5895f10753",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 102865568,
+   "datei": "georgia-latest.osm.pbf",
+   "export": {
+    "byte": 15262,
+    "datei": "georgia-latest.feuer.geojsonseq",
+    "sha256": "d8833eeb8ba1d64e4a27ec4b8829e0c7e141040579743c0dde0ae34a7733ac52"
+   },
+   "md5Geofabrik": "faadf8704299aa2968132d9eeb6a0c23",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 4887691182,
+   "datei": "germany-latest.osm.pbf",
+   "export": {
+    "byte": 1955149,
+    "datei": "germany-latest.feuer.geojsonseq",
+    "sha256": "f6bc1f0ddea3895fb3c4de1054194161d6a3bb9abdefc50846997e5a91c9ce2d"
+   },
+   "md5Geofabrik": "1312f7e86bca8f6c795a04e5a21ac4c8",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 343388775,
+   "datei": "greece-latest.osm.pbf",
+   "export": {
+    "byte": 554101,
+    "datei": "greece-latest.feuer.geojsonseq",
+    "sha256": "c65d190650fb30fa09530ec04c45a8bfe7837811ec94b835a1300840c285fc4e"
+   },
+   "md5Geofabrik": "5b388fe954fa230bc61d9bee2cdfbb38",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 3930311,
+   "datei": "guernsey-jersey-latest.osm.pbf",
+   "export": {
+    "byte": 51047,
+    "datei": "guernsey-jersey-latest.feuer.geojsonseq",
+    "sha256": "52b06dbd8d1c95aaf9eb2b7c4ee5de2f198fd6e195c1b87f96804588e93071e6"
+   },
+   "md5Geofabrik": "2a2a9d4a9975700e6aba6936152ba8d7",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 330395732,
+   "datei": "hungary-latest.osm.pbf",
+   "export": {
+    "byte": 193054,
+    "datei": "hungary-latest.feuer.geojsonseq",
+    "sha256": "cd47e4f2c135ba745d3ba47dfeeca952133edf1627ddcda74a0b060839931047"
+   },
+   "md5Geofabrik": "8d8715640eda300a4944bcda2f6ca71c",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 64991571,
+   "datei": "iceland-latest.osm.pbf",
+   "export": {
+    "byte": 277061,
+    "datei": "iceland-latest.feuer.geojsonseq",
+    "sha256": "71d2ec4810241adf44a789a8ecb4539a2cacbde725847458da00a05ede19210f"
+   },
+   "md5Geofabrik": "d8aca3f5f9aefd117bd927533a0a036b",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 91766624,
+   "datei": "iraq-latest.osm.pbf",
+   "export": {
+    "byte": 6892,
+    "datei": "iraq-latest.feuer.geojsonseq",
+    "sha256": "09b5e9b25592b9711b0d70fedb921ebbc15c1e71e4a9202770d0ec86d624cc30"
+   },
+   "md5Geofabrik": "2736491483a39279e1c3b971ad3f5f2b",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 418499831,
+   "datei": "ireland-and-northern-ireland-latest.osm.pbf",
+   "export": {
+    "byte": 381827,
+    "datei": "ireland-and-northern-ireland-latest.feuer.geojsonseq",
+    "sha256": "795f195b646cf99ef81d6d28853ef3c7fec7f2dc9172c65f163c935983626d31"
+   },
+   "md5Geofabrik": "82802b082502bbb588efa99c3f4f7ffb",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 6127442,
+   "datei": "isle-of-man-latest.osm.pbf",
+   "export": {
+    "byte": 15418,
+    "datei": "isle-of-man-latest.feuer.geojsonseq",
+    "sha256": "4af4ccc14248790704acc7651d9d697c97c60bde980ff512392cf7523093ca50"
+   },
+   "md5Geofabrik": "a23a17c160c9e58026f0f00c4e6ffcb7",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 121758950,
+   "datei": "israel-and-palestine-latest.osm.pbf",
+   "export": {
+    "byte": 18286,
+    "datei": "israel-and-palestine-latest.feuer.geojsonseq",
+    "sha256": "4c3cc1e3a92a53ed714845eb82ebcbf5451ff179142e0507daae0bc0a6617f87"
+   },
+   "md5Geofabrik": "5386480b0aa27123ec5e571488b39089",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 2254645341,
+   "datei": "italy-latest.osm.pbf",
+   "export": {
+    "byte": 758402,
+    "datei": "italy-latest.feuer.geojsonseq",
+    "sha256": "4ba6479e262a101c969a02e0c58d9ea46858e368147f342bc09bf19d6dbeb622"
+   },
+   "md5Geofabrik": "4fbea5ae4cbd54778955e2bb618df9fa",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 31683587,
+   "datei": "jordan-latest.osm.pbf",
+   "export": {
+    "byte": 4604,
+    "datei": "jordan-latest.feuer.geojsonseq",
+    "sha256": "a6f015fce342b35885808c19bf353cb39367bbe046dd1f01a11869c523338d52"
+   },
+   "md5Geofabrik": "69ad26b05a30d3650e6aeab5d25071c5",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 30886509,
+   "datei": "kosovo-latest.osm.pbf",
+   "export": {
+    "byte": 1,
+    "datei": "kosovo-latest.feuer.geojsonseq",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+   },
+   "md5Geofabrik": "1b363e8a3daf501bad6287f0c45e8013",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 141806081,
+   "datei": "latvia-latest.osm.pbf",
+   "export": {
+    "byte": 189069,
+    "datei": "latvia-latest.feuer.geojsonseq",
+    "sha256": "db0c0e27d2e07732c787b1b246d4627e23641645766bc414a07e1b28234609f7"
+   },
+   "md5Geofabrik": "91ff5617cbb6d508e9164324cc9356af",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 52679220,
+   "datei": "lebanon-latest.osm.pbf",
+   "export": {
+    "byte": 13026,
+    "datei": "lebanon-latest.feuer.geojsonseq",
+    "sha256": "c7518aad50d87505ac7b560dae196c34986c420ec8b2e6e0f564f944df00736d"
+   },
+   "md5Geofabrik": "e77b8e921e6d7ffc7651083bf63c06dc",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 76769022,
+   "datei": "libya-latest.osm.pbf",
+   "export": {
+    "byte": 28566,
+    "datei": "libya-latest.feuer.geojsonseq",
+    "sha256": "6425d2866f231ccaf4fd81df78246d0861bddb82d82bb5acb5de5619be148866"
+   },
+   "md5Geofabrik": "03da88a3328ed526565d99c86c19bfa1",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 3524521,
+   "datei": "liechtenstein-latest.osm.pbf",
+   "export": {
+    "byte": 1,
+    "datei": "liechtenstein-latest.feuer.geojsonseq",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+   },
+   "md5Geofabrik": "474b655a038ceef506052a579ad6e40e",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 224356696,
+   "datei": "lithuania-latest.osm.pbf",
+   "export": {
+    "byte": 66674,
+    "datei": "lithuania-latest.feuer.geojsonseq",
+    "sha256": "a1e6196b2a9e85b6fd292f55f3b1c4e1f78b1e03a63f0ec80999e7c4c49f5521"
+   },
+   "md5Geofabrik": "98773337c453bd5ad9b91d979d063f70",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 47998358,
+   "datei": "luxembourg-latest.osm.pbf",
+   "export": {
+    "byte": 1,
+    "datei": "luxembourg-latest.feuer.geojsonseq",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+   },
+   "md5Geofabrik": "4c6e46aaf26f3ee1791b818940b29949",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 29960751,
+   "datei": "macedonia-latest.osm.pbf",
+   "export": {
+    "byte": 1,
+    "datei": "macedonia-latest.feuer.geojsonseq",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+   },
+   "md5Geofabrik": "a189dcb80ce816664e1152934c1ec16a",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 9002452,
+   "datei": "malta-latest.osm.pbf",
+   "export": {
+    "byte": 13490,
+    "datei": "malta-latest.feuer.geojsonseq",
+    "sha256": "4f1dfe0b2d559b89bfaf1d51323ad515855213ade70a75a39f1161bd90d7205f"
+   },
+   "md5Geofabrik": "86d43c49badef20e4fb3263f65c9fa61",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 101554084,
+   "datei": "moldova-latest.osm.pbf",
+   "export": {
+    "byte": 1,
+    "datei": "moldova-latest.feuer.geojsonseq",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+   },
+   "md5Geofabrik": "53adc01bba1f8fa1824a4d7a808b77f1",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 704767,
+   "datei": "monaco-latest.osm.pbf",
+   "export": {
+    "byte": 2281,
+    "datei": "monaco-latest.feuer.geojsonseq",
+    "sha256": "166710ba41a93ff559829c810cc7a2c3f33cb7f59350e966d5fd8fe5b74c63b6"
+   },
+   "md5Geofabrik": "d10b113c7426a59ecbe7206268ff728d",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 34780415,
+   "datei": "montenegro-latest.osm.pbf",
+   "export": {
+    "byte": 19356,
+    "datei": "montenegro-latest.feuer.geojsonseq",
+    "sha256": "eb13def25a59f674dade828388f08177ed5fecea3e040ff6c36edf0ee7a2ad59"
+   },
+   "md5Geofabrik": "c6fd09af89e2c7c38055c014f984f82b",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 244710525,
+   "datei": "morocco-latest.osm.pbf",
+   "export": {
+    "byte": 80117,
+    "datei": "morocco-latest.feuer.geojsonseq",
+    "sha256": "dff332320570494a162309d83bf42c58c7285d934ea92f9cec1a7892ffd9c40d"
+   },
+   "md5Geofabrik": "54ab147ab26b3f51326ee1c017eb856e",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 1412590939,
+   "datei": "netherlands-latest.osm.pbf",
+   "export": {
+    "byte": 2715877,
+    "datei": "netherlands-latest.feuer.geojsonseq",
+    "sha256": "9646ef14bfa0d2d2d7da31ecc1a2d3568a8d6afb777bd0ffd908a44581cf593b"
+   },
+   "md5Geofabrik": "e0c8552b880eada04285f9cbb764bbf9",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 129739506,
+   "datei": "north-caucasus-fed-district-latest.osm.pbf",
+   "export": {
+    "byte": 35373,
+    "datei": "north-caucasus-fed-district-latest.feuer.geojsonseq",
+    "sha256": "e78be0a861aff7abd0dfcc5b6b6462aaae6022e7f20e14c2ca90a9944f84899a"
+   },
+   "md5Geofabrik": "83024c8087cb03ee86ae04ebbb3d8bfd",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 658484816,
+   "datei": "northwestern-fed-district-latest.osm.pbf",
+   "export": {
+    "byte": 622684,
+    "datei": "northwestern-fed-district-latest.feuer.geojsonseq",
+    "sha256": "95ee7ee9eba969ead25527a551aa829629660caedfa6ed0cbbe183bd643dc69b"
+   },
+   "md5Geofabrik": "5bf33f4635534dd3bc59b161a7f9cc40",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 1379259471,
+   "datei": "norway-latest.osm.pbf",
+   "export": {
+    "byte": 9253683,
+    "datei": "norway-latest.feuer.geojsonseq",
+    "sha256": "9469e855a19caf842440ce03d7aa2087bfc7682ea84c155dd83ad2521929229e"
+   },
+   "md5Geofabrik": "76a4da265592e18c73cea3ed3408f5f8",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 2121261613,
+   "datei": "poland-latest.osm.pbf",
+   "export": {
+    "byte": 273255,
+    "datei": "poland-latest.feuer.geojsonseq",
+    "sha256": "f2d2e59bc9e43ca8b480b7fb022f43103f5751fc5c7e89da07f5b22a3f108dce"
+   },
+   "md5Geofabrik": "ab3a4a4552cef3480fc01849d4de1987",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 429028943,
+   "datei": "portugal-latest.osm.pbf",
+   "export": {
+    "byte": 243861,
+    "datei": "portugal-latest.feuer.geojsonseq",
+    "sha256": "0f0074f1edc0934005f09b841f3f1a6ba36de169f561d5d143544e93feb30843"
+   },
+   "md5Geofabrik": "f5879e39425241d72602ca84965d097f",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 333880799,
+   "datei": "romania-latest.osm.pbf",
+   "export": {
+    "byte": 11398,
+    "datei": "romania-latest.feuer.geojsonseq",
+    "sha256": "3d7cf2214216b044a7647baa7ef4060931da1cac1ea9fe062328cf6b7a57bc94"
+   },
+   "md5Geofabrik": "8c82cd4019a154170703b1faabcde607",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 242628611,
+   "datei": "serbia-latest.osm.pbf",
+   "export": {
+    "byte": 27384,
+    "datei": "serbia-latest.feuer.geojsonseq",
+    "sha256": "d62a421f592392b7d85638534d5df814ed4db649fca78b5e6b909c20380d2ec7"
+   },
+   "md5Geofabrik": "304e396c19f34da2c9b039655c844cfe",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 348843576,
+   "datei": "slovakia-latest.osm.pbf",
+   "export": {
+    "byte": 51932,
+    "datei": "slovakia-latest.feuer.geojsonseq",
+    "sha256": "787a1e5b1f0275b01818dd58887623990562093631f1478470096630dfc3caab"
+   },
+   "md5Geofabrik": "376055e6b6a2a252fe97a6637ceaac3b",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 314644940,
+   "datei": "slovenia-latest.osm.pbf",
+   "export": {
+    "byte": 21502,
+    "datei": "slovenia-latest.feuer.geojsonseq",
+    "sha256": "9158c36a5de6700ba43b2685444213a98528a39668c0ed167a3523b1b77cc028"
+   },
+   "md5Geofabrik": "9cdafe0ec34f752adb58ac412c67875d",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 317931851,
+   "datei": "south-fed-district-latest.osm.pbf",
+   "export": {
+    "byte": 61160,
+    "datei": "south-fed-district-latest.feuer.geojsonseq",
+    "sha256": "38898fe2e5225e50e5be54cd4812a3e5f709b559a67a0dd1495fe685b69fb4ff"
+   },
+   "md5Geofabrik": "8b93e0366f2ba4ec1e3bbb2045af16cd",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 1504355353,
+   "datei": "spain-latest.osm.pbf",
+   "export": {
+    "byte": 879006,
+    "datei": "spain-latest.feuer.geojsonseq",
+    "sha256": "25ce860312449a3f7befb6df7abb7d37020e5dd30307b174eb7d4c790712712b"
+   },
+   "md5Geofabrik": "2d0d16ac65f87138281d64b22e33766f",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 1001818265,
+   "datei": "sweden-latest.osm.pbf",
+   "export": {
+    "byte": 2795042,
+    "datei": "sweden-latest.feuer.geojsonseq",
+    "sha256": "fe810828ed423e4066f5331087c03e0f940eddce4a475edb78312859b5a05c13"
+   },
+   "md5Geofabrik": "955c818ced0a5b5362d8746579f7c738",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 551580111,
+   "datei": "switzerland-latest.osm.pbf",
+   "export": {
+    "byte": 120117,
+    "datei": "switzerland-latest.feuer.geojsonseq",
+    "sha256": "8525cad188a9886f6089abef9eb5e3e906d29ae0c0d8dffc4e861cbbe12d8741"
+   },
+   "md5Geofabrik": "560c07c3157a507dbb37e69b39476909",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 83411484,
+   "datei": "syria-latest.osm.pbf",
+   "export": {
+    "byte": 8304,
+    "datei": "syria-latest.feuer.geojsonseq",
+    "sha256": "630862d2badbf802add8792750361caba1dda36f54f499976d130cca5010ef78"
+   },
+   "md5Geofabrik": "cd55d69587a0d5e81efdeae21f35d3d6",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 84973843,
+   "datei": "tunisia-latest.osm.pbf",
+   "export": {
+    "byte": 78613,
+    "datei": "tunisia-latest.feuer.geojsonseq",
+    "sha256": "989d5eb63c5b236673bf18aa6eff5e2a5ec4be7abaf1253f2567d72d2d162e35"
+   },
+   "md5Geofabrik": "7e71f523357339a09fa1adf8514ac70a",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 654299260,
+   "datei": "turkey-latest.osm.pbf",
+   "export": {
+    "byte": 336284,
+    "datei": "turkey-latest.feuer.geojsonseq",
+    "sha256": "a6a8f99cea7c54185bd60155830c85b3f3f465ab8068e7b9719c6bccfdbdc892"
+   },
+   "md5Geofabrik": "c38093f75f7f4fe37e2ec108cd6776aa",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 885310142,
+   "datei": "ukraine-latest.osm.pbf",
+   "export": {
+    "byte": 124952,
+    "datei": "ukraine-latest.feuer.geojsonseq",
+    "sha256": "7112148b3f5d58511da4faaae7df19b04f1f09461859cc8d3efc8f421b0d9d16"
+   },
+   "md5Geofabrik": "8744ec6367a8ac9423195fa3ad64548a",
+   "osmStand": "2026-11-20T21:21:21Z"
+  },
+  {
+   "byte": 2290218133,
+   "datei": "united-kingdom-latest.osm.pbf",
+   "export": {
+    "byte": 2193206,
+    "datei": "united-kingdom-latest.feuer.geojsonseq",
+    "sha256": "935dbd0ac27d640983fcb8cd02564136cd9888448a4ded9dbe29c100c09ef93b"
+   },
+   "md5Geofabrik": "ee2a678a96dfedc976e83d7afb272ff3",
+   "osmStand": "2026-11-20T21:21:21Z"
+  }
+ ],
+ "geht_auf": {
+  "klassen": true,
+  "schluessel": true,
+  "zeilen": true
+ },
+ "geschrieben": 42399,
+ "geschrieben_mit_merkmal": 32410,
+ "geschrieben_nur_nummeriert": 9989,
+ "je_gebiet": {
+  "adria": 2277,
+  "atlantik": 1954,
+  "atlantikinseln": 274,
+  "mitte-ost": 1288,
+  "mitte-west": 634,
+  "nordatlantik": 301,
+  "nordsee": 14198,
+  "ostmed": 2135,
+  "ostsee": 22451,
+  "westmed": 2099
+ },
+ "je_gebiet_nur_nummeriert": {
+  "adria": 428,
+  "atlantik": 355,
+  "atlantikinseln": 40,
+  "mitte-ost": 143,
+  "mitte-west": 107,
+  "nordatlantik": 111,
+  "nordsee": 2483,
+  "ostmed": 300,
+  "ostsee": 7301,
+  "westmed": 364
+ },
+ "je_klasse": {
+  "kurz": 21092,
+  "lang": 21307
+ },
+ "laengen": {
+  "0": 6,
+  "1": 918,
+  "10": 2734,
+  "11": 3355,
+  "12": 3392,
+  "13": 2735,
+  "14": 3328,
+  "15": 2010,
+  "16": 1866,
+  "17": 981,
+  "18": 724,
+  "19": 688,
+  "2": 144,
+  "20": 567,
+  "21": 587,
+  "22": 469,
+  "23": 362,
+  "24": 156,
+  "25": 70,
+  "26": 15,
+  "27": 2,
+  "3": 3137,
+  "4": 834,
+  "5": 487,
+  "6": 1324,
+  "7": 4489,
+  "8": 3889,
+  "9": 3130
+ },
+ "ohne_kennung_im_export": 0,
+ "ohne_lage": 0,
+ "ohne_merkmal": 2304,
+ "pruefnamen": [
+  {
+   "klasse": 2,
+   "name": "Ostri Rat",
+   "osm": "node/1377047160",
+   "schluessel": "seamark:light:character",
+   "zeilen": [
+    "Fl(3)10s14m15M"
+   ]
+  }
+ ],
+ "sektorenfeuer": 10070,
+ "zeilen": 47355
+}
